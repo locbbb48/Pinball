@@ -3,5 +3,5 @@
 	contact : builoc08042004@gmail.com
 */
 
-A Programming assignment at UET.
-1 Racing game inspired by Asphalt.
+A Programming assignment at UET, Game project using C++ language and SDL library.
+Game inspired by Asphalt.
