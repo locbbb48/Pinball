@@ -2,7 +2,7 @@
 
 #include "Globals.h"
 
-class Application;
+//class Application;
 class PhysBody;
 
 class Module
@@ -11,10 +11,10 @@ private :
 	bool enabled;
 
 public:
-	Application* App;
+	//Application* App;
 
-	Module(Application* parent, bool start_enabled = true) : App(parent), enabled(start_enabled)
-	{}
+	/*Module(Application* parent, bool start_enabled = true) : App(parent), enabled(start_enabled)
+	{}*/
 
 	virtual ~Module()
 	{}
