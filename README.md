@@ -4,10 +4,13 @@
 */
 
 A Programming assignment at UET, Game project using C++ language, SDL and Box2D library.
-Giảng viên hướng dẫn: TS. Lê Đức Trọng
 
 Game Origin is Pepsi max Pinball.
 ![image](https://github.com/user-attachments/assets/b56d714d-f158-459a-80f6-5049245e4736)
+
+
+Giảng viên hướng dẫn: TS. Lê Đức Trọng
+
 
 Pinball là một trò chơi đơn giản và cổ điển, được phát triển bằng cách sử dụng các thư viện SDL2 và Box2D để tạo ra trải nghiệm chơi game thú vị và mượt mà.
 
