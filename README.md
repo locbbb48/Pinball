@@ -45,7 +45,9 @@ Mở trò chơi và sử dụng các phím điều khiển left và right để 
 
 ## 3. Các thành phần trong game
 Bóng: Di chuyển tự do trên bàn và phản ứng với các va chạm.
+Assets/arrow.png
 Gậy: Được điều khiển bởi người chơi để giữ bóng trên bàn.
+
 Mục tiêu: Các đối tượng trên bàn mà bóng có thể va vào để ghi điểm.
 
 
