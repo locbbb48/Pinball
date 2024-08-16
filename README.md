@@ -3,7 +3,7 @@
 	contact : builoc08042004@gmail.com
 */
 
-A Programming assignment at UET, Game project using C++ language, SDL2, and Box2D libraries.
+Bài tập lập trình tại UET, dự án game sử dụng ngôn ngữ C++, thư viện SDL2 và Box2D.
 
 Game Origin: Pepsi Max Pinball.
 ![image](https://github.com/user-attachments/assets/b56d714d-f158-459a-80f6-5049245e4736)
