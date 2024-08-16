@@ -12,7 +12,7 @@ Game Origin: Pepsi Max Pinball.
 
 ---
 
-## 0. Cách tải game
+## 1. Cách tải game
 
 ### a. Cách 1: Không bao gồm code
 Tải bản phát hành mới nhất từ phần [Releases](https://github.com/your-repo/releases). Tệp này chỉ bao gồm trò chơi đã biên dịch và sẵn sàng để chơi.
@@ -22,44 +22,40 @@ Tải bản phát hành mới nhất từ phần [Releases](https://github.com/y
   ```bash
   git clone https://github.com/your-repo/pepsi-pinball.git
 Biên dịch code bằng cách sử dụng môi trường phát triển có hỗ trợ SDL2 và Box2D.
-1. Bắt đầu game
+## 2. Bắt đầu game
 Mở trò chơi và sử dụng các phím điều khiển left và right để điều khiển các gậy, bắt đầu hành trình ghi điểm của bạn trên bàn pinball.
 
 
-2. Chọn level
-Trong phiên bản hiện tại, trò chơi hỗ trợ một bàn chơi duy nhất. Các phiên bản tiếp theo có thể sẽ bổ sung thêm các level mới.
-
-
-3. Các thành phần trong game
+## 3. Các thành phần trong game
 Bóng: Di chuyển tự do trên bàn và phản ứng với các va chạm.
 Gậy: Được điều khiển bởi người chơi để giữ bóng trên bàn.
 Mục tiêu: Các đối tượng trên bàn mà bóng có thể va vào để ghi điểm.
 
 
-4. Cách chơi
-a. Mục tiêu
+## 4. Cách chơi
+### a. Mục tiêu
 Mục tiêu của trò chơi là ghi càng nhiều điểm càng tốt bằng cách sử dụng các gậy để giữ bóng trong bàn chơi, đánh bóng vào các mục tiêu và tăng điểm số.
 
-b. Cách điều khiển
+### b. Cách điều khiển
 Phím Trái (Left) và Phím Phải (Right): Dùng để điều khiển các gậy trái và phải trên bàn pinball.
 Phím Space: Sử dụng để bắt đầu trò chơi và bắn bóng ra khỏi khởi điểm.
 Các mục tiêu: Va chạm bóng vào các mục tiêu trên bàn để ghi điểm. Các mục tiêu có thể là các bumper, ramps, và targets.
-c. Điểm số và Combo
+### c. Điểm số và Combo
 Bumper Points: Mỗi lần bóng va chạm với bumper, bạn sẽ nhận được một lượng điểm nhất định.
 Ramp Combo: Điều hướng bóng qua các đường ramp để nhận được điểm combo.
 Multiplier: Ghi điểm vào một số mục tiêu đặc biệt có thể tăng hệ số nhân điểm (multiplier), giúp bạn ghi được nhiều điểm hơn cho mỗi lần va chạm tiếp theo.
-d. Giữ bóng và Lắc bàn (Tilt)
+### d. Giữ bóng và Lắc bàn (Tilt)
 Giữ bóng: Người chơi có thể sử dụng gậy để giữ bóng, sau đó thả ra để thực hiện các cú đánh chính xác.
 Lắc bàn (Tilt): Một số phiên bản có chức năng lắc bàn pinball để thay đổi quỹ đạo của bóng, nhưng hãy cẩn thận vì lạm dụng có thể dẫn đến mất kiểm soát (tilt warning).
 
 
-5. Chiến thắng và thất bại
+## 5. Chiến thắng và thất bại
 Chiến thắng: Ghi điểm cao nhất có thể mà không để bóng rơi khỏi bàn.
 Thất bại: Trò chơi kết thúc khi bóng rơi khỏi bàn mà không thể đánh lại được.
 Về đồ họa của game:
 Trò chơi sử dụng đồ họa đơn giản với màu sắc tươi sáng, mang đến cảm giác hoài cổ của pinball cổ điển.
 
-Về source code game:
+## Về source code game:
 Source code của trò chơi được viết bằng C++ với sự hỗ trợ của các thư viện SDL2 và Box2D.
 
 SDL2: Được sử dụng để xử lý đồ họa 2D, âm thanh, và sự kiện người dùng.
