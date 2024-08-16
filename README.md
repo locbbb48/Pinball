@@ -1,7 +1,7 @@
-# Pinball
-/*	  - Code by Bui Thanh Loc -
-	contact : builoc08042004@gmail.com
-*/
+# Pinball Game
+**- Code by Bui Thanh Loc - contact : builoc08042004@gmail.com**
+
+---
 
 - Bài tập lập trình tại UET, dự án game sử dụng ngôn ngữ C++, thư viện SDL2 và Box2D.
 - Theo như giấy phép đã nêu, bất kỳ ai cũng có thể xem hoặc sửa đổi mã của dự án này.
@@ -13,6 +13,7 @@
 
 
 ---
+
 
 ## Mục lục:
 1. [Cách tải game](#1-cách-tải-game)
