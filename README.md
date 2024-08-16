@@ -22,7 +22,6 @@ Game Origin: Pepsi Max Pinball.
    - [a. Mục tiêu](#a-mục-tiêu)
    - [b. Cách điều khiển](#b-cách-điều-khiển)
    - [c. Điểm số và Combo](#c-điểm-số-và-combo)
-   - [d. Giữ bóng và Lắc bàn (Tilt)](#d-giữ-bóng-và-lắc-bàn-tilt)
 5. [Chiến thắng và thất bại](#5-chiến-thắng-và-thất-bại)
 6. [Về đồ họa của game](#về-đồ-họa-của-game)
 7. [Về source code game](#về-source-code-game)
@@ -61,15 +60,25 @@ Mục tiêu của trò chơi là ghi càng nhiều điểm càng tốt bằng c�
 
 ### b. Cách điều khiển
 Phím Trái (Left) và Phím Phải (Right): Dùng để điều khiển các gậy trái và phải trên bàn pinball.
-Phím Space: Sử dụng để bắt đầu trò chơi và bắn bóng ra khỏi khởi điểm.
+
+
+Phím Space: Sử dụng để bắn bóng ra khỏi khởi điểm.
+
+
+Phím R: Sử dụng để bắt đầu lại trò chơi.
+
+
+F1: Tắt/Bật xử lí va chạm
+
 Các mục tiêu: Va chạm bóng vào các mục tiêu trên bàn để ghi điểm. Các mục tiêu có thể là các bumper, ramps, và targets.
 ### c. Điểm số và Combo
 Bumper Points: Mỗi lần bóng va chạm với bumper, bạn sẽ nhận được một lượng điểm nhất định.
+
+
 Ramp Combo: Điều hướng bóng qua các đường ramp để nhận được điểm combo.
+
+
 Multiplier: Ghi điểm vào một số mục tiêu đặc biệt có thể tăng hệ số nhân điểm (multiplier), giúp bạn ghi được nhiều điểm hơn cho mỗi lần va chạm tiếp theo.
-### d. Giữ bóng và Lắc bàn (Tilt)
-Giữ bóng: Người chơi có thể sử dụng gậy để giữ bóng, sau đó thả ra để thực hiện các cú đánh chính xác.
-Lắc bàn (Tilt): Một số phiên bản có chức năng lắc bàn pinball để thay đổi quỹ đạo của bóng, nhưng hãy cẩn thận vì lạm dụng có thể dẫn đến mất kiểm soát (tilt warning).
 
 
 ## 5. Chiến thắng và thất bại
