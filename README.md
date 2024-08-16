@@ -6,7 +6,7 @@
 Bài tập lập trình tại UET, dự án game sử dụng ngôn ngữ C++, thư viện SDL2 và Box2D.
 
 Game Origin: Pepsi Max Pinball.
-![image]([https://github.com/user-attachments/assets/b56d714d-f158-459a-80f6-5049245e4736](https://github.com/locbbb48/Pinball/blob/main/Assets/Map.png))
+![image](https://github.com/locbbb48/Pinball/blob/main/Assets/Map.png)
 
 **Giảng viên hướng dẫn**: TS. Lê Đức Trọng
 
