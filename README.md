@@ -28,7 +28,7 @@
 5. [Chiến thắng và thất bại](#5-chiến-thắng-và-thất-bại)
 6. [Về đồ họa của game](#về-đồ-họa-của-game)
 7. [Về source code game](#về-source-code-game)
-8. 
+8. [Điểm khác so với game gốc](#8-điểm-khác-biệt-so-với-game-gốc)
 
 ---
 
@@ -107,7 +107,7 @@ Pinball là một trò chơi đơn giản và cổ điển, được phát tri�
 ---
 
 
-## Điểm khác biệt so với game gốc:
+## 8. Điểm khác biệt so với game gốc:
   ```bash
 	Tính năng		|		Game gốc				|		My Game
  Hiển thị điểm số	|Điểm số được hiển thị trong trò chơi.			|Điểm số được hiển thị trên tiêu đề cùng với số mạng còn lại.
