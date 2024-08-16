@@ -39,7 +39,7 @@ Tải bản phát hành mới nhất từ phần [Releases](https://github.com/y
   git clone https://github.com/your-repo/pepsi-pinball.git
 Biên dịch code bằng cách sử dụng môi trường phát triển có hỗ trợ SDL2 và Box2D.
 ## 2. Bắt đầu game
-Mở trò chơi và sử dụng các phím điều khiển left và right để điều khiển các gậy, bắt đầu hành trình ghi điểm của bạn trên bàn pinball.
+Mở trò chơi bằng cách tìm file .exe trong file release đã tải về và bắt đầu trò chơi.
 
 
 ## 3. Các thành phần trong game
