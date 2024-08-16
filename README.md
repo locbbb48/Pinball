@@ -1,4 +1,4 @@
-###[ENG](https://github.com/locbbb48/Pinball/edit/main/README.md)
+### [ENG](https://github.com/locbbb48/Pinball/edit/main/README.md)
 # Pinball Game
 **- Code by Bui Thanh Loc - contact : builoc08042004@gmail.com**
 
