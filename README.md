@@ -3,12 +3,14 @@
 	contact : builoc08042004@gmail.com
 */
 
-- Bài tập lập trình tại UET, dự án game sử dụng ngôn ngữ C++, thư viện SDL2 và Box2D. Trò chơi không có cốt truyện phức tạp mà tập trung vào lối chơi pinball cổ điển. Người chơi điều khiển 2 que gậy để giữ bóng trên mà chơi và ghi điểm bằng cách va chạm với các mục tiêu chỉ định.
+- Bài tập lập trình tại UET, dự án game sử dụng ngôn ngữ C++, thư viện SDL2 và Box2D.
 - Theo như giấy phép đã nêu, bất kỳ ai cũng có thể xem hoặc sửa đổi mã của dự án này.
+- Trò chơi không có cốt truyện phức tạp mà tập trung vào lối chơi pinball cổ điển. Người chơi điều khiển 2 que gậy để giữ bóng trên mà chơi và ghi điểm bằng cách va chạm với các mục tiêu chỉ định.
 - Game Origin: Pepsi Max Pinball.
+- **Giảng viên hướng dẫn**: TS. Lê Đức Trọng
+
 ![image](https://github.com/locbbb48/Pinball/blob/main/Assets/Map.png)
 
-**Giảng viên hướng dẫn**: TS. Lê Đức Trọng
 
 ---
 
