@@ -69,7 +69,10 @@ Lắc bàn (Tilt): Một số phiên bản có chức năng lắc bàn pinball �
 ## 5. Chiến thắng và thất bại
 Chiến thắng: Ghi điểm cao nhất có thể mà không để bóng rơi khỏi bàn.
 Thất bại: Trò chơi kết thúc khi bóng rơi khỏi bàn mà không thể đánh lại được.
-Về đồ họa của game:
+
+
+
+## Về đồ họa của game:
 Trò chơi sử dụng đồ họa đơn giản với màu sắc tươi sáng, mang đến cảm giác hoài cổ của pinball cổ điển.
 
 ## Về source code game:
