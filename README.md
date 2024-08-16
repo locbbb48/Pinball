@@ -105,13 +105,13 @@ Pinball là một trò chơi đơn giản và cổ điển, được phát tri�
 
 
 ## Điểm khác biệt so với game gốc:
-
--	Tính năng	|		Game gốc					|		My Game
-- Hiển thị điểm số	|	Điểm số được hiển thị trong trò chơi.			|	Điểm số được hiển thị trên tiêu đề cùng với số mạng còn lại.
--			|								|								
-- Sự xuất hiện của bóng	|	Tất cả các bóng được sinh ra vào đầu trò chơi.		|	Một bóng được sinh ra và được tái sinh khi người chơi mất một mạng.
--			|								|	
-- Cơn lốc (Tornado)	|	Cơn lốc trên bên trái làm bóng xoay và khi bóng rơi 	|	Cơn lốc chỉ sinh ra bóng ở trên cùng của bản đồ khi bóng rơi vào lỗ.
--			|	vào lỗ, nó sẽ được sinh ra lại ở trên cùng của bản đồ.	|
--		|								|
-- Tính năng Combo	|	Không có.						|	Khi ba ngôi sao trên cùng được sáng lên, điểm số bạn nhận được sẽ được nhân đôi (x2).
+  ```bash
+	Tính năng	|		Game gốc				|		My Game
+ Hiển thị điểm số	|Điểm số được hiển thị trong trò chơi.			|Điểm số được hiển thị trên tiêu đề cùng với số mạng còn lại.
+			|							|								
+ Sự xuất hiện của bóng	|Tất cả các bóng được sinh ra vào đầu trò chơi.		|Một bóng được sinh ra và được tái sinh khi người chơi mất một mạng.
+			|							|	
+ Cơn lốc (Tornado)	|Cơn lốc trên bên trái làm bóng xoay và khi bóng rơi 	|Cơn lốc chỉ sinh ra bóng ở trên cùng của bản đồ khi bóng rơi vào lỗ.
+			|vào lỗ, nó sẽ được sinh ra lại ở trên cùng của bản đồ.	|
+			|							|
+ Tính năng Combo	|Không có.						|Khi ba ngôi sao trên cùng được sáng lên, điểm số bạn nhận được sẽ được nhân đôi (x2).
