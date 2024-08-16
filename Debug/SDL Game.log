@@ -1,64 +1,367 @@
 ﻿  Application.cpp
+E:\Pinball\Application.cpp(14,14): error C2027: use of undefined type 'Application'
+E:\Pinball\ModuleWindow.h(7,7): message : see declaration of 'Application'
+E:\Pinball\Application.cpp(15,1): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+E:\Pinball\Application.cpp(16,2): error C2065: 'renderer': undeclared identifier
+E:\Pinball\Application.cpp(16,30): error C2355: 'this': can only be referenced inside non-static member functions or non-static data member initializers
+E:\Pinball\Application.cpp(16,29): error C2512: 'ModuleRender::ModuleRender': no appropriate default constructor available
+E:\Pinball\Application.cpp(16,29): message : while trying to match the argument list '()'
+E:\Pinball\Application.cpp(17,2): error C2065: 'window': undeclared identifier
+E:\Pinball\Application.cpp(17,28): error C2355: 'this': can only be referenced inside non-static member functions or non-static data member initializers
+E:\Pinball\Application.cpp(17,27): error C2512: 'ModuleWindow::ModuleWindow': no appropriate default constructor available
+E:\Pinball\Application.cpp(17,27): message : while trying to match the argument list '()'
+E:\Pinball\Application.cpp(18,2): error C2065: 'textures': undeclared identifier
+E:\Pinball\Application.cpp(18,32): error C2355: 'this': can only be referenced inside non-static member functions or non-static data member initializers
+E:\Pinball\Application.cpp(18,31): error C2512: 'ModuleTextures::ModuleTextures': no appropriate default constructor available
+E:\Pinball\Application.cpp(18,31): message : while trying to match the argument list '()'
+E:\Pinball\Application.cpp(19,2): error C2065: 'input': undeclared identifier
+E:\Pinball\Application.cpp(19,26): error C2355: 'this': can only be referenced inside non-static member functions or non-static data member initializers
+E:\Pinball\Application.cpp(19,25): error C2512: 'ModuleInput::ModuleInput': no appropriate default constructor available
+E:\Pinball\Application.cpp(19,25): message : while trying to match the argument list '()'
+E:\Pinball\Application.cpp(20,2): error C2065: 'audio': undeclared identifier
+E:\Pinball\Application.cpp(20,26): error C2355: 'this': can only be referenced inside non-static member functions or non-static data member initializers
+E:\Pinball\Application.cpp(20,25): error C2665: 'ModuleAudio::ModuleAudio': no overloaded function could convert all the argument types
+E:\Pinball\ModuleAudio.h(32,1): message : could be 'ModuleAudio::ModuleAudio(const ModuleAudio &)'
+E:\Pinball\Application.cpp(20,25): message : 'ModuleAudio::ModuleAudio(const ModuleAudio &)': cannot convert argument 1 from 'bool' to 'const ModuleAudio &'
+E:\Pinball\Application.cpp(20,32): message : Reason: cannot convert from 'bool' to 'const ModuleAudio'
+E:\Pinball\Application.cpp(20,32): message : No constructor could take the source type, or constructor overload resolution was ambiguous
+E:\Pinball\ModuleAudio.h(13,2): message : or       'ModuleAudio::ModuleAudio(Application *,bool)'
+E:\Pinball\Application.cpp(20,25): message : 'ModuleAudio::ModuleAudio(Application *,bool)': cannot convert argument 1 from 'bool' to 'Application *'
+E:\Pinball\Application.cpp(20,32): message : Conversion from integral type to pointer type requires reinterpret_cast, C-style cast or parenthesized function-style cast
+E:\Pinball\Application.cpp(20,25): message : while trying to match the argument list '(bool)'
+E:\Pinball\Application.cpp(21,2): error C2065: 'player': undeclared identifier
+E:\Pinball\Application.cpp(21,28): error C2355: 'this': can only be referenced inside non-static member functions or non-static data member initializers
+E:\Pinball\Application.cpp(21,27): error C2512: 'ModulePlayer::ModulePlayer': no appropriate default constructor available
+E:\Pinball\Application.cpp(21,27): message : while trying to match the argument list '()'
+E:\Pinball\Application.cpp(22,2): error C2065: 'scene_intro': undeclared identifier
+E:\Pinball\Application.cpp(22,37): error C2355: 'this': can only be referenced inside non-static member functions or non-static data member initializers
+E:\Pinball\Application.cpp(22,36): error C2512: 'ModuleSceneIntro::ModuleSceneIntro': no appropriate default constructor available
+E:\Pinball\Application.cpp(22,36): message : while trying to match the argument list '()'
+E:\Pinball\Application.cpp(23,2): error C2065: 'physics': undeclared identifier
+E:\Pinball\Application.cpp(23,30): error C2355: 'this': can only be referenced inside non-static member functions or non-static data member initializers
+E:\Pinball\Application.cpp(23,29): error C2512: 'ModulePhysics::ModulePhysics': no appropriate default constructor available
+E:\Pinball\Application.cpp(23,29): message : while trying to match the argument list '()'
+E:\Pinball\Application.cpp(30,12): error C2065: 'window': undeclared identifier
+E:\Pinball\Application.cpp(30,2): error C3861: 'AddModule': identifier not found
+E:\Pinball\Application.cpp(31,12): error C2065: 'physics': undeclared identifier
+E:\Pinball\Application.cpp(31,2): error C3861: 'AddModule': identifier not found
+E:\Pinball\Application.cpp(32,12): error C2065: 'renderer': undeclared identifier
+E:\Pinball\Application.cpp(32,2): error C3861: 'AddModule': identifier not found
+E:\Pinball\Application.cpp(33,12): error C2065: 'textures': undeclared identifier
+E:\Pinball\Application.cpp(33,2): error C3861: 'AddModule': identifier not found
+E:\Pinball\Application.cpp(34,12): error C2065: 'input': undeclared identifier
+E:\Pinball\Application.cpp(34,2): error C3861: 'AddModule': identifier not found
+E:\Pinball\Application.cpp(35,12): error C2065: 'audio': undeclared identifier
+E:\Pinball\Application.cpp(35,2): error C3861: 'AddModule': identifier not found
+E:\Pinball\Application.cpp(38,12): error C2065: 'scene_intro': undeclared identifier
+E:\Pinball\Application.cpp(38,2): error C3861: 'AddModule': identifier not found
+E:\Pinball\Application.cpp(41,12): error C2065: 'player': undeclared identifier
+E:\Pinball\Application.cpp(41,2): error C3861: 'AddModule': identifier not found
+E:\Pinball\Application.cpp(42,1): warning C4508: '{ctor}': function should return a value; 'void' return type assumed
+E:\Pinball\Application.cpp(44,15): error C2027: use of undefined type 'Application'
+E:\Pinball\ModuleWindow.h(7,7): message : see declaration of 'Application'
+E:\Pinball\Application.cpp(45,1): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+E:\Pinball\Application.cpp(46,31): error C2065: 'list_modules': undeclared identifier
+E:\Pinball\Application.cpp(53,1): warning C4508: '{dtor}': function should return a value; 'void' return type assumed
+E:\Pinball\Application.cpp(55,19): error C2027: use of undefined type 'Application'
+E:\Pinball\ModuleWindow.h(7,7): message : see declaration of 'Application'
+E:\Pinball\Application.cpp(60,31): error C2065: 'list_modules': undeclared identifier
+E:\Pinball\Application.cpp(70,9): error C2065: 'list_modules': undeclared identifier
+E:\Pinball\Application.cpp(83,28): error C2027: use of undefined type 'Application'
+E:\Pinball\ModuleWindow.h(7,7): message : see declaration of 'Application'
+E:\Pinball\Application.cpp(86,31): error C2065: 'list_modules': undeclared identifier
+E:\Pinball\Application.cpp(95,9): error C2065: 'list_modules': undeclared identifier
+E:\Pinball\Application.cpp(104,9): error C2065: 'list_modules': undeclared identifier
+E:\Pinball\Application.cpp(116,19): error C2027: use of undefined type 'Application'
+E:\Pinball\ModuleWindow.h(7,7): message : see declaration of 'Application'
+E:\Pinball\Application.cpp(119,31): error C2065: 'list_modules': undeclared identifier
+E:\Pinball\Application.cpp(129,19): error C2027: use of undefined type 'Application'
+E:\Pinball\ModuleWindow.h(7,7): message : see declaration of 'Application'
+E:\Pinball\Application.cpp(131,2): error C2065: 'list_modules': undeclared identifier
   log.cpp
   Main.cpp
+E:\Pinball\Main.cpp(24,2): error C2065: 'Application': undeclared identifier
+E:\Pinball\Main.cpp(24,15): error C2065: 'App': undeclared identifier
+E:\Pinball\Main.cpp(33,4): error C2065: 'App': undeclared identifier
+E:\Pinball\Main.cpp(33,14): error C2061: syntax error: identifier 'Application'
+E:\Pinball\Main.cpp(40,8): error C2065: 'App': undeclared identifier
+E:\Pinball\Main.cpp(55,24): error C2065: 'App': undeclared identifier
+E:\Pinball\Main.cpp(71,8): error C2065: 'App': undeclared identifier
+E:\Pinball\Main.cpp(85,9): error C2065: 'App': undeclared identifier
+E:\Pinball\Main.cpp(85,12): error C2541: 'delete': cannot delete objects that are not pointers
   ModuleAudio.cpp
+E:\Pinball\ModuleAudio.h(13,14): error C2061: syntax error: identifier 'Application'
+E:\Pinball\ModuleAudio.h(31,8): error C2143: syntax error: missing ';' before '<'
+E:\Pinball\ModuleAudio.h(31,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+E:\Pinball\ModuleAudio.h(31,23): error C2238: unexpected token(s) preceding ';'
+E:\Pinball\ModuleAudio.cpp(9,26): error C2065: 'Application': undeclared identifier
+E:\Pinball\ModuleAudio.cpp(9,39): error C2065: 'app': undeclared identifier
+E:\Pinball\ModuleAudio.cpp(9,44): error C2062: type 'bool' unexpected
+E:\Pinball\ModuleAudio.cpp(9,76): error C2143: syntax error: missing ')' before ','
+E:\Pinball\ModuleAudio.cpp(9,91): error C2059: syntax error: ')'
+E:\Pinball\ModuleAudio.cpp(9,99): error C2665: 'Module::Module': no overloaded function could convert all the argument types
+E:\Pinball\Module.h(78,1): message : could be 'Module::Module(const Module &)'
+E:\Pinball\ModuleAudio.cpp(9,99): message : 'Module::Module(const Module &)': cannot convert argument 1 from 'int' to 'const Module &'
+E:\Pinball\ModuleAudio.cpp(9,100): message : Reason: cannot convert from 'int' to 'const Module'
+E:\Pinball\ModuleAudio.cpp(9,100): message : No constructor could take the source type, or constructor overload resolution was ambiguous
+E:\Pinball\ModuleAudio.cpp(9,99): message : while trying to match the argument list '(int)'
+E:\Pinball\ModuleAudio.cpp(10,1): error C2143: syntax error: missing ';' before '{'
+E:\Pinball\ModuleAudio.cpp(10,2): error C2059: syntax error: '}'
+E:\Pinball\ModuleAudio.cpp(10,2): error C2143: syntax error: missing ';' before '}'
+E:\Pinball\ModuleAudio.cpp(14,1): error C2143: syntax error: missing ';' before '{'
+E:\Pinball\ModuleAudio.cpp(14,1): error C2447: '{': missing function header (old-style formal list?)
+E:\Pinball\ModuleAudio.cpp(60,2): error C2065: 'p2List_item': undeclared identifier
+E:\Pinball\ModuleAudio.cpp(60,24): error C2059: syntax error: '>'
+E:\Pinball\ModuleAudio.cpp(62,6): error C2065: 'item': undeclared identifier
+E:\Pinball\ModuleAudio.cpp(62,13): error C2065: 'fx': undeclared identifier
+E:\Pinball\ModuleAudio.cpp(62,28): error C2065: 'item': undeclared identifier
+E:\Pinball\ModuleAudio.cpp(62,42): error C2065: 'item': undeclared identifier
+E:\Pinball\ModuleAudio.cpp(62,49): error C2065: 'item': undeclared identifier
+E:\Pinball\ModuleAudio.cpp(64,17): error C2065: 'item': undeclared identifier
+E:\Pinball\ModuleAudio.cpp(67,2): error C2065: 'fx': undeclared identifier
+E:\Pinball\ModuleAudio.cpp(144,3): error C2065: 'fx': undeclared identifier
+E:\Pinball\ModuleAudio.cpp(145,9): error C2065: 'fx': undeclared identifier
+E:\Pinball\ModuleAudio.cpp(161,5): error C2065: 'fx': undeclared identifier
   ModuleInput.cpp
+E:\Pinball\ModuleInput.h(21,14): error C2061: syntax error: identifier 'Application'
+E:\Pinball\ModuleInput.cpp(7,26): error C2065: 'Application': undeclared identifier
+E:\Pinball\ModuleInput.cpp(7,39): error C2065: 'app': undeclared identifier
+E:\Pinball\ModuleInput.cpp(7,44): error C2062: type 'bool' unexpected
+E:\Pinball\ModuleInput.cpp(7,76): error C2143: syntax error: missing ')' before ','
+E:\Pinball\ModuleInput.cpp(7,91): error C2059: syntax error: ')'
+E:\Pinball\ModuleInput.cpp(9,2): error C2065: 'keyboard': undeclared identifier
+E:\Pinball\ModuleInput.cpp(9,36): error C2059: syntax error: ';'
+E:\Pinball\ModuleInput.cpp(10,9): error C2065: 'keyboard': undeclared identifier
+E:\Pinball\ModuleInput.cpp(10,57): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+E:\Pinball\ModuleInput.cpp(10,2): error C2365: 'memset': redefinition; previous definition was 'function'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\vcruntime_string.h(63,15): message : see declaration of 'memset'
+E:\Pinball\ModuleInput.cpp(11,9): error C2065: 'mouse_buttons': undeclared identifier
+E:\Pinball\ModuleInput.cpp(11,71): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+E:\Pinball\ModuleInput.cpp(11,2): error C2365: 'memset': redefinition; previous definition was 'function'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\vcruntime_string.h(63,15): message : see declaration of 'memset'
+E:\Pinball\ModuleInput.cpp(12,1): error C2059: syntax error: '}'
+E:\Pinball\ModuleInput.cpp(12,1): error C2143: syntax error: missing ';' before '}'
+E:\Pinball\ModuleInput.cpp(16,1): error C2143: syntax error: missing ';' before '{'
+E:\Pinball\ModuleInput.cpp(16,1): error C2447: '{': missing function header (old-style formal list?)
   ModulePhysics.cpp
-D:\SHARESOURCE\Game C++\SuccessBuild\Physics2-Pinball-1.0\Physics2-Pinball-1.0\Pepsi Pinball\ModulePhysics.cpp(105,23): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-D:\SHARESOURCE\Game C++\SuccessBuild\Physics2-Pinball-1.0\Physics2-Pinball-1.0\Pepsi Pinball\ModulePhysics.cpp(106,25): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-D:\SHARESOURCE\Game C++\SuccessBuild\Physics2-Pinball-1.0\Physics2-Pinball-1.0\Pepsi Pinball\ModulePhysics.cpp(150,20): warning C4018: '<': signed/unsigned mismatch
-D:\SHARESOURCE\Game C++\SuccessBuild\Physics2-Pinball-1.0\Physics2-Pinball-1.0\Pepsi Pinball\ModulePhysics.cpp(332,13): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-D:\SHARESOURCE\Game C++\SuccessBuild\Physics2-Pinball-1.0\Physics2-Pinball-1.0\Pepsi Pinball\ModulePhysics.cpp(333,13): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-D:\SHARESOURCE\Game C++\SuccessBuild\Physics2-Pinball-1.0\Physics2-Pinball-1.0\Pepsi Pinball\ModulePhysics.cpp(339,27): warning C4244: 'return': conversion from 'float32' to 'int', possible loss of data
+E:\Pinball\ModuleInput.h(21,14): error C2061: syntax error: identifier 'Application'
+E:\Pinball\ModuleRender.h(10,15): error C2061: syntax error: identifier 'Application'
+E:\Pinball\ModulePhysics.h(37,16): error C2061: syntax error: identifier 'Application'
+E:\Pinball\ModulePhysics.cpp(15,30): error C2065: 'Application': undeclared identifier
+E:\Pinball\ModulePhysics.cpp(15,43): error C2065: 'app': undeclared identifier
+E:\Pinball\ModulePhysics.cpp(15,48): error C2062: type 'bool' unexpected
+E:\Pinball\ModulePhysics.cpp(15,80): error C2143: syntax error: missing ')' before ','
+E:\Pinball\ModulePhysics.cpp(15,95): error C2059: syntax error: ')'
+E:\Pinball\ModulePhysics.cpp(17,2): error C2065: 'world': undeclared identifier
+E:\Pinball\ModulePhysics.cpp(17,14): error C2059: syntax error: ';'
+E:\Pinball\ModulePhysics.cpp(18,16): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+E:\Pinball\ModulePhysics.cpp(19,10): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+E:\Pinball\ModulePhysics.cpp(20,1): error C2059: syntax error: '}'
+E:\Pinball\ModulePhysics.cpp(20,1): error C2143: syntax error: missing ';' before '}'
+E:\Pinball\ModulePhysics.cpp(24,1): error C2143: syntax error: missing ';' before '{'
+E:\Pinball\ModulePhysics.cpp(24,1): error C2447: '{': missing function header (old-style formal list?)
+E:\Pinball\ModulePhysics.cpp(105,23): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+E:\Pinball\ModulePhysics.cpp(106,25): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+E:\Pinball\ModulePhysics.cpp(150,20): warning C4018: '<': signed/unsigned mismatch
+E:\Pinball\ModulePhysics.cpp(177,5): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePhysics.cpp(186,16): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePhysics.cpp(187,16): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePhysics.cpp(202,6): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePhysics.cpp(217,8): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePhysics.cpp(223,6): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePhysics.cpp(237,8): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePhysics.cpp(242,6): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePhysics.cpp(254,6): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePhysics.cpp(332,13): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+E:\Pinball\ModulePhysics.cpp(333,13): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+E:\Pinball\ModulePhysics.cpp(339,27): warning C4244: 'return': conversion from 'float32' to 'int', possible loss of data
   ModulePlayer.cpp
+E:\Pinball\ModuleTextures.h(10,17): error C2061: syntax error: identifier 'Application'
+E:\Pinball\ModulePlayer.h(12,15): error C2061: syntax error: identifier 'Application'
+E:\Pinball\ModulePhysics.h(37,16): error C2061: syntax error: identifier 'Application'
+E:\Pinball\ModuleRender.h(10,15): error C2061: syntax error: identifier 'Application'
+E:\Pinball\ModuleInput.h(21,14): error C2061: syntax error: identifier 'Application'
+E:\Pinball\ModulePlayer.cpp(12,15): error C2511: 'ModulePlayer::ModulePlayer(Application *,bool)': overloaded member function not found in 'ModulePlayer'
+E:\Pinball\ModulePlayer.h(9,7): message : see declaration of 'ModulePlayer'
+E:\Pinball\ModulePlayer.cpp(13,1): error C2550: 'ModulePlayer::{ctor}': constructor initializer lists are only allowed on constructor definitions
+E:\Pinball\ModulePlayer.cpp(14,27): error C2597: illegal reference to non-static member 'ModulePlayer::flipper2'
+E:\Pinball\ModulePlayer.h(31,15): message : see declaration of 'ModulePlayer::flipper2'
+E:\Pinball\ModulePlayer.cpp(24,17): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(25,12): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(26,13): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(28,18): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(29,16): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(30,16): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(31,14): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(33,19): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(34,20): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(47,2): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(48,2): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(57,9): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(68,17): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(69,18): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(88,37): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(96,16): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(97,14): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(117,32): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(120,17): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(121,15): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(140,33): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(146,15): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(147,3): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(152,15): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(153,3): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(154,7): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(160,15): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(161,3): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(162,6): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(169,15): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(170,3): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(172,15): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(173,3): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(175,15): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(176,3): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(179,15): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(180,3): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(182,7): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(186,15): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(187,3): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(188,7): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(192,15): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(193,3): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(195,7): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(202,15): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(203,3): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(209,3): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(214,3): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(219,15): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(221,3): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(222,7): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(226,15): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(228,3): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(229,7): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(242,6): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(245,3): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(247,6): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(253,6): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(256,3): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(258,6): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(263,6): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(263,59): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(266,3): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(268,6): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(274,6): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(277,18): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(281,3): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(281,42): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(281,68): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(282,4): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(282,44): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(286,3): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(292,2): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(296,2): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(301,18): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(303,2): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(303,22): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(307,6): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(309,3): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(312,3): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(313,3): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(316,6): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(318,3): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(320,3): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(324,6): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(328,4): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(332,4): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(337,4): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(346,3): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(348,20): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(355,3): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(357,21): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(360,6): error C2065: 'App': undeclared identifier
+E:\Pinball\ModulePlayer.cpp(360): fatal  error C1003: error count exceeds 100; stopping compilation
   ModuleRender.cpp
+E:\Pinball\ModuleRender.cpp(7,74): error C2661: 'Module::Module': no overloaded function takes 2 arguments
+E:\Pinball\ModuleRender.cpp(7,74): message : while trying to match the argument list '(Application *, bool)'
+E:\Pinball\ModuleRender.cpp(31,32): error C2065: 'App': undeclared identifier
   ModuleSceneIntro.cpp
+E:\Pinball\ModuleRender.h(10,15): error C2061: syntax error: identifier 'Application'
+E:\Pinball\ModuleSceneIntro.h(13,19): error C2061: syntax error: identifier 'Application'
+E:\Pinball\ModuleInput.h(21,14): error C2061: syntax error: identifier 'Application'
+E:\Pinball\ModuleTextures.h(10,17): error C2061: syntax error: identifier 'Application'
+E:\Pinball\ModuleAudio.h(13,14): error C2061: syntax error: identifier 'Application'
+E:\Pinball\ModulePhysics.h(37,16): error C2061: syntax error: identifier 'Application'
+E:\Pinball\ModuleSceneIntro.cpp(10,36): error C2065: 'Application': undeclared identifier
+E:\Pinball\ModuleSceneIntro.cpp(10,49): error C2065: 'app': undeclared identifier
+E:\Pinball\ModuleSceneIntro.cpp(10,54): error C2062: type 'bool' unexpected
+E:\Pinball\ModuleSceneIntro.cpp(10,86): error C2143: syntax error: missing ')' before ','
+E:\Pinball\ModuleSceneIntro.cpp(10,101): error C2059: syntax error: ')'
+E:\Pinball\ModuleSceneIntro.cpp(15,20): error C2143: syntax error: missing ';' before 'ModuleSceneIntro::~ModuleSceneIntro'
+E:\Pinball\ModuleSceneIntro.cpp(15,37): error C2059: syntax error: ')'
+E:\Pinball\ModuleSceneIntro.cpp(16,1): error C2143: syntax error: missing ';' before '{'
+E:\Pinball\ModuleSceneIntro.cpp(16,1): error C2447: '{': missing function header (old-style formal list?)
+E:\Pinball\ModuleSceneIntro.cpp(24,2): error C2065: 'App': undeclared identifier
+E:\Pinball\ModuleSceneIntro.cpp(24,28): error C2065: 'App': undeclared identifier
+E:\Pinball\ModuleSceneIntro.cpp(26,8): error C2065: 'App': undeclared identifier
+E:\Pinball\ModuleSceneIntro.cpp(27,10): error C2065: 'App': undeclared identifier
+E:\Pinball\ModuleSceneIntro.cpp(28,18): error C2065: 'App': undeclared identifier
+E:\Pinball\ModuleSceneIntro.cpp(29,9): error C2065: 'App': undeclared identifier
+E:\Pinball\ModuleSceneIntro.cpp(31,2): error C2065: 'App': undeclared identifier
+E:\Pinball\ModuleSceneIntro.cpp(34,14): error C2065: 'App': undeclared identifier
+E:\Pinball\ModuleSceneIntro.cpp(35,12): error C2065: 'App': undeclared identifier
+E:\Pinball\ModuleSceneIntro.cpp(36,20): error C2065: 'App': undeclared identifier
+E:\Pinball\ModuleSceneIntro.cpp(37,15): error C2065: 'App': undeclared identifier
+E:\Pinball\ModuleSceneIntro.cpp(38,16): error C2065: 'App': undeclared identifier
+E:\Pinball\ModuleSceneIntro.cpp(40,19): error C2065: 'App': undeclared identifier
+E:\Pinball\ModuleSceneIntro.cpp(41,13): error C2065: 'App': undeclared identifier
+E:\Pinball\ModuleSceneIntro.cpp(42,15): error C2065: 'App': undeclared identifier
+E:\Pinball\ModuleSceneIntro.cpp(43,14): error C2065: 'App': undeclared identifier
+E:\Pinball\ModuleSceneIntro.cpp(45,22): error C2065: 'App': undeclared identifier
+E:\Pinball\ModuleSceneIntro.cpp(46,21): error C2065: 'App': undeclared identifier
+E:\Pinball\ModuleSceneIntro.cpp(48,15): error C2065: 'App': undeclared identifier
+E:\Pinball\ModuleSceneIntro.cpp(49,14): error C2065: 'App': undeclared identifier
+E:\Pinball\ModuleSceneIntro.cpp(50,16): error C2065: 'App': undeclared identifier
+E:\Pinball\ModuleSceneIntro.cpp(80,2): error C2065: 'App': undeclared identifier
+E:\Pinball\ModuleSceneIntro.cpp(83,2): error C2065: 'App': undeclared identifier
+E:\Pinball\ModuleSceneIntro.cpp(90,2): error C2065: 'App': undeclared identifier
+E:\Pinball\ModuleSceneIntro.cpp(96,2): error C2065: 'App': undeclared identifier
+E:\Pinball\ModuleSceneIntro.cpp(102,2): error C2065: 'App': undeclared identifier
+E:\Pinball\ModuleSceneIntro.cpp(109,3): error C2065: 'App': undeclared identifier
+E:\Pinball\ModuleSceneIntro.cpp(113,3): error C2065: 'App': undeclared identifier
+E:\Pinball\ModuleSceneIntro.cpp(117,3): error C2065: 'App': undeclared identifier
+E:\Pinball\ModuleSceneIntro.cpp(125,12): error C2065: 'App': undeclared identifier
+E:\Pinball\ModuleSceneIntro.cpp(126,12): error C2065: 'App': undeclared identifier
+E:\Pinball\ModuleSceneIntro.cpp(135,2): error C2065: 'App': undeclared identifier
+E:\Pinball\ModuleSceneIntro.cpp(150,18): error C2065: 'App': undeclared identifier
+E:\Pinball\ModuleSceneIntro.cpp(159,19): error C2065: 'App': undeclared identifier
+E:\Pinball\ModuleSceneIntro.cpp(173,17): error C2065: 'App': undeclared identifier
+E:\Pinball\ModuleSceneIntro.cpp(181,18): error C2065: 'App': undeclared identifier
+E:\Pinball\ModuleSceneIntro.cpp(199,24): error C2065: 'App': undeclared identifier
+E:\Pinball\ModuleSceneIntro.cpp(217,23): error C2065: 'App': undeclared identifier
+E:\Pinball\ModuleSceneIntro.cpp(219,15): error C2065: 'App': undeclared identifier
+E:\Pinball\ModuleSceneIntro.cpp(220,14): error C2065: 'App': undeclared identifier
+E:\Pinball\ModuleSceneIntro.cpp(221,16): error C2065: 'App': undeclared identifier
+E:\Pinball\ModuleSceneIntro.cpp(330,16): error C2065: 'App': undeclared identifier
+E:\Pinball\ModuleSceneIntro.cpp(342,23): error C2065: 'App': undeclared identifier
+E:\Pinball\ModuleSceneIntro.cpp(355,17): error C2065: 'App': undeclared identifier
+E:\Pinball\ModuleSceneIntro.cpp(368,18): error C2065: 'App': undeclared identifier
+E:\Pinball\ModuleSceneIntro.cpp(388,21): error C2065: 'App': undeclared identifier
+E:\Pinball\ModuleSceneIntro.cpp(411,22): error C2065: 'App': undeclared identifier
+E:\Pinball\ModuleSceneIntro.cpp(431,16): error C2065: 'App': undeclared identifier
   ModuleTextures.cpp
+E:\Pinball\ModuleRender.h(10,15): error C2061: syntax error: identifier 'Application'
+E:\Pinball\ModuleTextures.h(10,17): error C2061: syntax error: identifier 'Application'
+E:\Pinball\ModuleTextures.cpp(9,32): error C2065: 'Application': undeclared identifier
+E:\Pinball\ModuleTextures.cpp(9,45): error C2065: 'app': undeclared identifier
+E:\Pinball\ModuleTextures.cpp(9,50): error C2062: type 'bool' unexpected
+E:\Pinball\ModuleTextures.cpp(9,82): error C2143: syntax error: missing ')' before ','
+E:\Pinball\ModuleTextures.cpp(9,97): error C2059: syntax error: ')'
+E:\Pinball\ModuleTextures.cpp(14,18): error C2143: syntax error: missing ';' before 'ModuleTextures::~ModuleTextures'
+E:\Pinball\ModuleTextures.cpp(14,33): error C2059: syntax error: ')'
+E:\Pinball\ModuleTextures.cpp(15,1): error C2143: syntax error: missing ';' before '{'
+E:\Pinball\ModuleTextures.cpp(15,1): error C2447: '{': missing function header (old-style formal list?)
+E:\Pinball\ModuleTextures.cpp(66,42): error C2065: 'App': undeclared identifier
   ModuleWindow.cpp
+E:\Pinball\ModuleWindow.cpp(5,74): error C2661: 'Module::Module': no overloaded function takes 2 arguments
+E:\Pinball\ModuleWindow.cpp(5,74): message : while trying to match the argument list '(Application *, bool)'
   Generating Code...
-Box2D.lib(b2DistanceJoint.obj) : warning LNK4099: PDB '' was not found with 'Box2D.lib(b2DistanceJoint.obj)' or at ''; linking object as if no debug info
-Box2D.lib(b2FrictionJoint.obj) : warning LNK4099: PDB '' was not found with 'Box2D.lib(b2FrictionJoint.obj)' or at ''; linking object as if no debug info
-Box2D.lib(b2GearJoint.obj) : warning LNK4099: PDB '' was not found with 'Box2D.lib(b2GearJoint.obj)' or at ''; linking object as if no debug info
-Box2D.lib(b2Joint.obj) : warning LNK4099: PDB '' was not found with 'Box2D.lib(b2Joint.obj)' or at ''; linking object as if no debug info
-Box2D.lib(b2MotorJoint.obj) : warning LNK4099: PDB '' was not found with 'Box2D.lib(b2MotorJoint.obj)' or at ''; linking object as if no debug info
-Box2D.lib(b2MouseJoint.obj) : warning LNK4099: PDB '' was not found with 'Box2D.lib(b2MouseJoint.obj)' or at ''; linking object as if no debug info
-Box2D.lib(b2PrismaticJoint.obj) : warning LNK4099: PDB '' was not found with 'Box2D.lib(b2PrismaticJoint.obj)' or at ''; linking object as if no debug info
-Box2D.lib(b2PulleyJoint.obj) : warning LNK4099: PDB '' was not found with 'Box2D.lib(b2PulleyJoint.obj)' or at ''; linking object as if no debug info
-Box2D.lib(b2RevoluteJoint.obj) : warning LNK4099: PDB '' was not found with 'Box2D.lib(b2RevoluteJoint.obj)' or at ''; linking object as if no debug info
-Box2D.lib(b2RopeJoint.obj) : warning LNK4099: PDB '' was not found with 'Box2D.lib(b2RopeJoint.obj)' or at ''; linking object as if no debug info
-Box2D.lib(b2WeldJoint.obj) : warning LNK4099: PDB '' was not found with 'Box2D.lib(b2WeldJoint.obj)' or at ''; linking object as if no debug info
-Box2D.lib(b2WheelJoint.obj) : warning LNK4099: PDB '' was not found with 'Box2D.lib(b2WheelJoint.obj)' or at ''; linking object as if no debug info
-Box2D.lib(b2CircleContact.obj) : warning LNK4099: PDB '' was not found with 'Box2D.lib(b2CircleContact.obj)' or at ''; linking object as if no debug info
-Box2D.lib(b2Contact.obj) : warning LNK4099: PDB '' was not found with 'Box2D.lib(b2Contact.obj)' or at ''; linking object as if no debug info
-Box2D.lib(b2ContactSolver.obj) : warning LNK4099: PDB '' was not found with 'Box2D.lib(b2ContactSolver.obj)' or at ''; linking object as if no debug info
-Box2D.lib(b2PolygonAndCircleContact.obj) : warning LNK4099: PDB '' was not found with 'Box2D.lib(b2PolygonAndCircleContact.obj)' or at ''; linking object as if no debug info
-Box2D.lib(b2EdgeAndCircleContact.obj) : warning LNK4099: PDB '' was not found with 'Box2D.lib(b2EdgeAndCircleContact.obj)' or at ''; linking object as if no debug info
-Box2D.lib(b2EdgeAndPolygonContact.obj) : warning LNK4099: PDB '' was not found with 'Box2D.lib(b2EdgeAndPolygonContact.obj)' or at ''; linking object as if no debug info
-Box2D.lib(b2ChainAndCircleContact.obj) : warning LNK4099: PDB '' was not found with 'Box2D.lib(b2ChainAndCircleContact.obj)' or at ''; linking object as if no debug info
-Box2D.lib(b2ChainAndPolygonContact.obj) : warning LNK4099: PDB '' was not found with 'Box2D.lib(b2ChainAndPolygonContact.obj)' or at ''; linking object as if no debug info
-Box2D.lib(b2PolygonContact.obj) : warning LNK4099: PDB '' was not found with 'Box2D.lib(b2PolygonContact.obj)' or at ''; linking object as if no debug info
-Box2D.lib(b2Body.obj) : warning LNK4099: PDB '' was not found with 'Box2D.lib(b2Body.obj)' or at ''; linking object as if no debug info
-Box2D.lib(b2ContactManager.obj) : warning LNK4099: PDB '' was not found with 'Box2D.lib(b2ContactManager.obj)' or at ''; linking object as if no debug info
-Box2D.lib(b2Fixture.obj) : warning LNK4099: PDB '' was not found with 'Box2D.lib(b2Fixture.obj)' or at ''; linking object as if no debug info
-Box2D.lib(b2Island.obj) : warning LNK4099: PDB '' was not found with 'Box2D.lib(b2Island.obj)' or at ''; linking object as if no debug info
-Box2D.lib(b2World.obj) : warning LNK4099: PDB '' was not found with 'Box2D.lib(b2World.obj)' or at ''; linking object as if no debug info
-Box2D.lib(b2WorldCallbacks.obj) : warning LNK4099: PDB '' was not found with 'Box2D.lib(b2WorldCallbacks.obj)' or at ''; linking object as if no debug info
-Box2D.lib(b2BlockAllocator.obj) : warning LNK4099: PDB '' was not found with 'Box2D.lib(b2BlockAllocator.obj)' or at ''; linking object as if no debug info
-Box2D.lib(b2Draw.obj) : warning LNK4099: PDB '' was not found with 'Box2D.lib(b2Draw.obj)' or at ''; linking object as if no debug info
-Box2D.lib(b2Math.obj) : warning LNK4099: PDB '' was not found with 'Box2D.lib(b2Math.obj)' or at ''; linking object as if no debug info
-Box2D.lib(b2Settings.obj) : warning LNK4099: PDB '' was not found with 'Box2D.lib(b2Settings.obj)' or at ''; linking object as if no debug info
-Box2D.lib(b2StackAllocator.obj) : warning LNK4099: PDB '' was not found with 'Box2D.lib(b2StackAllocator.obj)' or at ''; linking object as if no debug info
-Box2D.lib(b2Timer.obj) : warning LNK4099: PDB '' was not found with 'Box2D.lib(b2Timer.obj)' or at ''; linking object as if no debug info
-Box2D.lib(b2CircleShape.obj) : warning LNK4099: PDB '' was not found with 'Box2D.lib(b2CircleShape.obj)' or at ''; linking object as if no debug info
-Box2D.lib(b2EdgeShape.obj) : warning LNK4099: PDB '' was not found with 'Box2D.lib(b2EdgeShape.obj)' or at ''; linking object as if no debug info
-Box2D.lib(b2ChainShape.obj) : warning LNK4099: PDB '' was not found with 'Box2D.lib(b2ChainShape.obj)' or at ''; linking object as if no debug info
-Box2D.lib(b2PolygonShape.obj) : warning LNK4099: PDB '' was not found with 'Box2D.lib(b2PolygonShape.obj)' or at ''; linking object as if no debug info
-Box2D.lib(b2BroadPhase.obj) : warning LNK4099: PDB '' was not found with 'Box2D.lib(b2BroadPhase.obj)' or at ''; linking object as if no debug info
-Box2D.lib(b2CollideCircle.obj) : warning LNK4099: PDB '' was not found with 'Box2D.lib(b2CollideCircle.obj)' or at ''; linking object as if no debug info
-Box2D.lib(b2CollideEdge.obj) : warning LNK4099: PDB '' was not found with 'Box2D.lib(b2CollideEdge.obj)' or at ''; linking object as if no debug info
-Box2D.lib(b2CollidePolygon.obj) : warning LNK4099: PDB '' was not found with 'Box2D.lib(b2CollidePolygon.obj)' or at ''; linking object as if no debug info
-Box2D.lib(b2Collision.obj) : warning LNK4099: PDB '' was not found with 'Box2D.lib(b2Collision.obj)' or at ''; linking object as if no debug info
-Box2D.lib(b2Distance.obj) : warning LNK4099: PDB '' was not found with 'Box2D.lib(b2Distance.obj)' or at ''; linking object as if no debug info
-Box2D.lib(b2DynamicTree.obj) : warning LNK4099: PDB '' was not found with 'Box2D.lib(b2DynamicTree.obj)' or at ''; linking object as if no debug info
-Box2D.lib(b2TimeOfImpact.obj) : warning LNK4099: PDB '' was not found with 'Box2D.lib(b2TimeOfImpact.obj)' or at ''; linking object as if no debug info
-  SDL Game.vcxproj -> D:\SHARESOURCE\Game C++\SuccessBuild\Physics2-Pinball-1.0\Physics2-Pinball-1.0\Pepsi Pinball\Debug\2D Physics - class 4.exe
