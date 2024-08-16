@@ -35,9 +35,8 @@ Tải bản phát hành mới nhất từ phần [Releases](https://github.com/y
 
 ### b. Cách 2: Bao gồm code và có thể biên dịch
 - Clone repository từ GitHub:
-  ```bash
-  git clone https://github.com/your-repo/pepsi-pinball.git
-Biên dịch code bằng cách sử dụng môi trường phát triển có hỗ trợ SDL2 và Box2D.
+ 
+- Biên dịch code bằng cách sử dụng môi trường phát triển có hỗ trợ SDL2 và Box2D.
 ## 2. Bắt đầu game
 Mở trò chơi bằng cách tìm file .exe trong file release đã tải về và bắt đầu trò chơi.
 
