@@ -12,6 +12,23 @@ Game Origin: Pepsi Max Pinball.
 
 ---
 
+## Trò chơi không có cốt truyện phức tạp mà tập trung vào lối chơi pinball cổ điển. Người chơi điều khiển 2 que gậy để giữ bóng trên mà chơi và ghi điểm bằng cách va chạm với các mục tiêu chỉ định.
+1. [Cách tải game](#1-cách-tải-game)
+   - [a. Cách 1: Không bao gồm code](#a-cách-1-không-bao-gồm-code)
+   - [b. Cách 2: Bao gồm code và có thể biên dịch](#b-cách-2-bao-gồm-code-và-có-thể-biên-dịch)
+2. [Bắt đầu game](#2-bắt-đầu-game)
+3. [Các thành phần trong game](#3-các-thành-phần-trong-game)
+4. [Cách chơi](#4-cách-chơi)
+   - [a. Mục tiêu](#a-mục-tiêu)
+   - [b. Cách điều khiển](#b-cách-điều-khiển)
+   - [c. Điểm số và Combo](#c-điểm-số-và-combo)
+   - [d. Giữ bóng và Lắc bàn (Tilt)](#d-giữ-bóng-và-lắc-bàn-tilt)
+5. [Chiến thắng và thất bại](#5-chiến-thắng-và-thất-bại)
+6. [Về đồ họa của game](#về-đồ-họa-của-game)
+7. [Về source code game](#về-source-code-game)
+
+---
+
 ## 1. Cách tải game
 
 ### a. Cách 1: Không bao gồm code
