@@ -71,6 +71,7 @@ Chiến thắng: Ghi điểm cao nhất có thể mà không để bóng rơi kh
 Thất bại: Trò chơi kết thúc khi bóng rơi khỏi bàn mà không thể đánh lại được.
 
 
+---
 
 ## Về đồ họa của game:
 Trò chơi sử dụng đồ họa đơn giản với màu sắc tươi sáng, mang đến cảm giác hoài cổ của pinball cổ điển.
