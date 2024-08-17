@@ -101,8 +101,8 @@
 ## Về source code game:
 - Source code của trò chơi được viết bằng C++ với sự hỗ trợ của các thư viện SDL2 và Box2D.
 
--SDL2: Được sử dụng để xử lý đồ họa 2D, âm thanh, và sự kiện người dùng.
--Box2D:là một thư viện vật lý 2D mã nguồn mở, giúp mô phỏng các hành vi vật lý thực tế trong trò chơi. Box2D cung cấp các công cụ để xử lý các va chạm, trọng lực, và các lực tác động khác trong môi trường 2D.
+- SDL2: Được sử dụng để xử lý đồ họa 2D, âm thanh, và sự kiện người dùng.
+- Box2D:là một thư viện vật lý 2D mã nguồn mở, giúp mô phỏng các hành vi vật lý thực tế trong trò chơi. Box2D cung cấp các công cụ để xử lý các va chạm, trọng lực, và các lực tác động khác trong môi trường 2D.
 Box2D giúp mô phỏng vật lý chính xác cho các đối tượng trên bàn pinball, bao gồm các va chạm giữa bóng và các mục tiêu, tác động của trọng lực lên bóng, và các tương tác khác. Thư viện hỗ trợ tạo ra một trải nghiệm chơi game chân thực và mượt mà.
 
 ---
