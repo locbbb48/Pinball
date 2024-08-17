@@ -36,7 +36,7 @@
 ## 1. Cách tải game
 
 ### a. Cách 1: Không bao gồm code
-- Tải bản phát hành mới nhất từ phần [Releases](https://github.com/your-repo/releases). Tệp này chỉ bao gồm trò chơi đã biên dịch và sẵn sàng để chơi.
+- Tải bản phát hành mới nhất từ phần [Releases](https://github.com/locbbb48/Pinball/tags). Tệp này chỉ bao gồm trò chơi đã biên dịch và sẵn sàng để chơi.
 - Tải xuống PinBall.Release.zip
 - Giải nén và tìm file Pinball.exe trong tệp đã giải nén.
 - Ấn vào file Pinball.exe và chơi game.
