@@ -80,7 +80,7 @@
 
 - F1: Tắt/Bật hiển thị những phần có va chạm.
 
-  ![image](https://github.com/locbbb48/Pinball/blob/main/Assets/flippers.png)
+  ![image](https://github.com/locbbb48/Pinball/blob/main/Assets/Collision.png)
 
 
 - Các mục tiêu: Va chạm bóng vào các mục tiêu trên bàn để ghi điểm. Các mục tiêu có thể là các bumper, ramps, và targets.
