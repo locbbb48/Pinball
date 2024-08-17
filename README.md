@@ -109,36 +109,36 @@
 - Thư viện:
 
 
-	SDL2: Được sử dụng để xử lý đồ họa 2D, âm thanh, và sự kiện người dùng.
+	. SDL2: Được sử dụng để xử lý đồ họa 2D, âm thanh, và sự kiện người dùng.
 
 
-	Box2D:là một thư viện vật lý 2D mã nguồn mở, giúp mô phỏng các hành vi vật lý thực tế trong trò chơi. Box2D cung cấp các công cụ để xử lý các va chạm, trọng lực, và các lực tác động khác trong môi trường 2D.
+	. Box2D:là một thư viện vật lý 2D mã nguồn mở, giúp mô phỏng các hành vi vật lý thực tế trong trò chơi. Box2D cung cấp các công cụ để xử lý các va chạm, trọng lực, và các lực tác động khác trong môi trường 2D.
 Box2D giúp mô phỏng vật lý chính xác cho các đối tượng trên bàn pinball, bao gồm các va chạm giữa bóng và các mục tiêu, tác động của trọng lực lên bóng, và các tương tác khác. Thư viện hỗ trợ tạo ra một trải nghiệm chơi game chân thực và mượt mà.
 - Mô tả chung về các Module:
 
   
-  	ModuleWindow: quản lý cửa sổ ứng dụng, là bước khởi đầu cho bất kỳ chương trình đồ họa nào. Cửa sổ cần phải được khởi tạo trước khi có thể thực hiện các tác vụ khác như render, input, hoặc hiển thị hình ảnh.
+  	. ModuleWindow: quản lý cửa sổ ứng dụng, là bước khởi đầu cho bất kỳ chương trình đồ họa nào. Cửa sổ cần phải được khởi tạo trước khi có thể thực hiện các tác vụ khác như render, input, hoặc hiển thị hình ảnh.
 
   
-	ModuleRender: quản lý việc render nội dung lên cửa sổ. ModuleRender sẽ chịu trách nhiệm vẽ mọi thứ lên màn hình.
+	. ModuleRender: quản lý việc render nội dung lên cửa sổ. ModuleRender sẽ chịu trách nhiệm vẽ mọi thứ lên màn hình.
 
 
-	ModuleInput: quản lý các đầu vào từ người dùng, như bàn phím và chuột. Điều này rất quan trọng để điều khiển nhân vật hoặc tương tác với các thành phần khác của game.
+	. ModuleInput: quản lý các đầu vào từ người dùng, như bàn phím và chuột. Điều này rất quan trọng để điều khiển nhân vật hoặc tương tác với các thành phần khác của game.
 
 
-	ModuleTextures: quản lý việc tải và lưu trữ các hình ảnh, sprite. Các texture này sẽ được sử dụng trong quá trình render, vì vậy cần phải có trước khi render các đối tượng phức tạp.
+	. ModuleTextures: quản lý việc tải và lưu trữ các hình ảnh, sprite. Các texture này sẽ được sử dụng trong quá trình render, vì vậy cần phải có trước khi render các đối tượng phức tạp.
 
 
-	ModuleAudio: xử lý âm thanh trong trò chơi, bao gồm nhạc nền và hiệu ứng âm thanh. Bạn cần khởi tạo âm thanh để tạo trải nghiệm đa phương tiện cho người chơi.
+	. ModuleAudio: xử lý âm thanh trong trò chơi, bao gồm nhạc nền và hiệu ứng âm thanh. Bạn cần khởi tạo âm thanh để tạo trải nghiệm đa phương tiện cho người chơi.
 
 
-	ModulePhysics: quản lý các quy luật vật lý trong trò chơi, cần thiết cho việc xử lý va chạm, trọng lực, và các động lực khác. Điều này rất quan trọng nếu trò chơi có các yếu tố vật lý như di chuyển hoặc tương tác giữa các đối tượng.
+	. ModulePhysics: quản lý các quy luật vật lý trong trò chơi, cần thiết cho việc xử lý va chạm, trọng lực, và các động lực khác. Điều này rất quan trọng nếu trò chơi có các yếu tố vật lý như di chuyển hoặc tương tác giữa các đối tượng.
 
 
-	ModuleSceneIntro: quản lý cảnh đầu tiên của trò chơi. Module này sử dụng tất cả các module trước đó để hiển thị cảnh đầu tiên.
+	. ModuleSceneIntro: quản lý cảnh đầu tiên của trò chơi. Module này sử dụng tất cả các module trước đó để hiển thị cảnh đầu tiên.
 
 
-	ModulePlayer: ử dụng tất cả các thành phần đã được tạo ra trước đó (cửa sổ, render, input, audio, physics) để điều khiển lối chơi.
+	. ModulePlayer: ử dụng tất cả các thành phần đã được tạo ra trước đó (cửa sổ, render, input, audio, physics) để điều khiển lối chơi.
   
 
 
