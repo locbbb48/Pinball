@@ -78,7 +78,10 @@
 - Phím R: Sử dụng để bắt đầu lại trò chơi.
 
 
-- F1: Tắt/Bật xử lí va chạm
+- F1: Tắt/Bật hiển thị những phần có va chạm.
+
+  ![image](https://github.com/locbbb48/Pinball/blob/main/Assets/flippers.png)
+
 
 - Các mục tiêu: Va chạm bóng vào các mục tiêu trên bàn để ghi điểm. Các mục tiêu có thể là các bumper, ramps, và targets.
 ### c. Điểm số và Combo
