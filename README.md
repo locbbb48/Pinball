@@ -147,7 +147,7 @@
 
 - Combo: Trong khi ba ngôi sao trên cùng sáng lên, số điểm mỗi lần bạn đạt được sẽ đều được nhân đôi.
 
-![image](https://github.com/locbbb48/Pinball/blob/main/Assets/Scr3.png)
+	![image](https://github.com/locbbb48/Pinball/blob/main/Assets/Scr3.png)
 
 ## 5. Chiến thắng và thất bại
 - Chiến thắng: Ghi điểm cao nhất có thể và cố gắng giữ không để bóng rơi khỏi bàn.
