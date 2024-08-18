@@ -207,7 +207,7 @@ Box2D giúp mô phỏng vật lý chính xác cho các đối tượng trên bà
 ---
 
 ## 9. Lời tự đánh giá bản thân sau khi hoàn thành Project:
-# Điểm tốt nổi bật:
+### Điểm tốt nổi bật:
 - Project được sử dụng nhiều kĩ thuật lập trình nổi bật, trong đó áp dụng được nhiều kiến thức lí thuyết đã học trong môn LTNC:
 
 	. Sử dụng Danh sách liên kết: Dự án sử dụng danh sách liên kết (p2List) để quản lý các module trong game. Danh sách này giúp dễ dàng thêm, xóa, hoặc duyệt qua các module mà không cần phải biết trước 		kích thước hoặc vị trí của các phần tử. Ví dụ: Trong Application::AddModule(Module* mod), các module được thêm vào danh sách liên kết để quản lý và gọi các hàm Init, Start, Update, và CleanUp theo trình 	tự.
@@ -228,7 +228,7 @@ Box2D giúp mô phỏng vật lý chính xác cho các đối tượng trên bà
 
 - Tự tìm hiểu và làm việc với 1 thư viện mới là Box2D: Việc sử dụng thêm 1 thư viện về vật lí giúp em khám phá ra nhiều điều thú vị và mới mẻ về sự mô phỏng lại thế giới vật lí bằng code. Các quy luật về vật lí như va chạm, trọng lực, và động lực học của các vật thể được mô phỏng lại chi tiết theo quy luật thực tế. Khi tích hợp Box2D vào dự án game Pinball, nó mang lại nhiều cải tiến và khác biệt so với việc sử dụng các hệ thống vật lý đơn giản hoặc không có hệ thống vật lý. Vậy nên Project này với em không chỉ đơn thuần là cố gắng tạo 1 con game pinball cổ điển, mà còn là trải nghiệm thêm những gì code có thể làm được trong việc tái tạo và mô phỏng lại những gì có trong thực tế, như trong project này là vật lí cơ bản.
 
-# 1 số hạn chế mà bản thân tự nhận ra:
+### 1 số hạn chế mà bản thân tự nhận ra:
 
 - Giao diện đồ họa và âm thanh đơn giản vì chủ yếu cắt ghép từ game gốc.
   
@@ -236,7 +236,7 @@ Box2D giúp mô phỏng vật lý chính xác cho các đối tượng trên bà
 
 - Thiếu thời gian để cải tiến thêm về hệ thống điểm thưởng cũng như các quy tắc khác cho game.
 
-# Những kinh nghiệm rút ra cho bản thân sau project và Kết luận:
+### Những kinh nghiệm rút ra cho bản thân sau project và Kết luận:
 
 - Tầm quan trọng của quản lý bộ nhớ: Việc quản lý bộ nhớ thủ công với con trỏ raw trong C++ đòi hỏi lập trình viên phải cực kỳ cẩn thận để tránh các lỗi như rò rỉ bộ nhớ hoặc xóa đối tượng nhiều lần. Điều này nhấn mạnh tầm quan trọng của việc hiểu rõ về quản lý bộ nhớ trong C++.
 
