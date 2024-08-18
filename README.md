@@ -12,6 +12,7 @@
 
 ![image](https://github.com/locbbb48/Pinball/blob/main/Assets/Map.png)
 
+- [Video trình bày cấu trúc chương trình](https://drive.google.com/drive/u/0/folders/1w02Xtwy24GcA7c2UpSX1gHoPvmrJ3A4o)
 
 ---
 
@@ -152,6 +153,10 @@
 ## 5. Chiến thắng và thất bại
 - Chiến thắng: Ghi điểm cao nhất có thể và cố gắng giữ không để bóng rơi khỏi bàn.
 - Thất bại: Trò chơi kết thúc khi bóng rơi khỏi bàn 5 lần.
+<video width="640" height="480" controls>
+  <source src="https://github.com/locbbb48/Pinball/raw/main/Assets/Pinball_pre2.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 
 ---
