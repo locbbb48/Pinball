@@ -27,9 +27,10 @@
    - [b. Cách điều khiển](#b-cách-điều-khiển)
    - [c. Điểm số và Combo](#c-điểm-số-và-combo)
 5. [Chiến thắng và thất bại](#5-chiến-thắng-và-thất-bại)
-6. [Về đồ họa của game](#về-đồ-họa-của-game)
-7. [Về source code game](#về-source-code-game)
+6. [Về đồ họa của game](#6-về-đồ-họa-của-game)
+7. [Về source code game](#7-về-source-code-game)
 8. [Điểm khác so với game gốc](#8-điểm-khác-biệt-so-với-game-gốc)
+9. [Lời tự đánh giá](#9-Lời-tự-đánh-giá-bản-thân-sau-khi-hoàn-thành-Project)
 
 ---
 
@@ -145,10 +146,11 @@
 
 ---
 
-## Về đồ họa của game:
+## 6. Về đồ họa của game:
 - Trò chơi sử dụng đồ họa đơn giản với màu sắc tươi sáng, mang đến cảm giác hoài cổ của pinball cổ điển.
+- Đồ họa và Âm thanh của game được sưu tầm từ nhiều nguồn khác nhau, có thể là từ cắt ghép từ chính game gốc nhưng có chọn lọc và bổ sung thêm để mạng lại cảm giác chân thực nhất.
 
-## Về source code game:
+## 7. Về source code game:
 - Source code của trò chơi được viết bằng C++ với sự hỗ trợ của các thư viện SDL2 và Box2D; Game được xây dựng dựa trên việc tạo ra các Module có tính kế thừa để quản lí từng phần của game.
 - Thư viện:
 
@@ -199,3 +201,55 @@ Box2D giúp mô phỏng vật lý chính xác cho các đối tượng trên bà
  Cơn lốc (Tornado)	|Cơn lốc trên bên trái làm bóng xoay và khi bóng rơi 	|Cơn lốc chỉ sinh ra bóng ở trên cùng của bản đồ khi bóng rơi vào lỗ.
 				 vào lỗ, nó sẽ được sinh ra lại ở trên cùng của bản đồ.	
  Tính năng Combo		|Không có.						|Khi ba ngôi sao trên cùng được sáng lên, điểm số bạn nhận được sẽ được nhân đôi (x2).
+
+```
+
+---
+
+## 9. Lời tự đánh giá bản thân sau khi hoàn thành Project:
+# Điểm tốt nổi bật:
+- Project được sử dụng nhiều kĩ thuật lập trình nổi bật, trong đó áp dụng được nhiều kiến thức lí thuyết đã học trong môn LTNC:
+
+	. Sử dụng Danh sách liên kết: Dự án sử dụng danh sách liên kết (p2List) để quản lý các module trong game. Danh sách này giúp dễ dàng thêm, xóa, hoặc duyệt qua các module mà không cần phải biết trước 		kích thước hoặc vị trí của các phần tử. Ví dụ: Trong Application::AddModule(Module* mod), các module được thêm vào danh sách liên kết để quản lý và gọi các hàm Init, Start, Update, và CleanUp theo trình 	tự.
+  
+	. Sử dụng con trỏ trỏ raw (new và delete) để quản lý bộ nhớ cho các module trong game. Điều này đòi hỏi lập trình viên phải cẩn thận để tránh các lỗi liên quan đến quản lý bộ nhớ như rò rỉ bộ nhớ 		(memory leak) hoặc xóa đối tượng nhiều lần. Ví dụ: Trong Application::~Application(), các module được xóa theo thứ tự ngược lại với thứ tự khởi tạo để đảm bảo mọi tài nguyên được giải phóng đúng cách.
+
+- Sử dụng 1 số Design Pattern chuyên dụng và nổi bật cho việc làm game như:
+
+  	. Singleton: 1 Design Patterm để đảm bảo chỉ có một instance duy nhất của lớp Application. Điều này giúp dễ dàng quản lý các tài nguyên và trạng thái toàn cục của game. Ví dụ: Application là một 		singleton, và nó được tạo và quản lý trong hàm main. Chỉ có một instance duy nhất của Application trong suốt vòng đời của chương trình.
+
+  	. Module Pattern: Dự án tổ chức code thành các module riêng biệt, mỗi module chịu trách nhiệm cho một phần cụ thể của game như ModuleRender, ModuleWindow, ModuleInput, ModuleAudio, ModulePlayer, và 		ModulePhysics. Điều này giúp tách biệt các chức năng, giảm sự phụ thuộc giữa các thành phần, và dễ bảo trì hơn.
+
+	.Template Method Pattern: Các phương thức Update trong các module được triển khai theo template method pattern. Mỗi module có thể triển khai riêng các phương thức PreUpdate, Update, và PostUpdate để xác 	định hành vi cụ thể của nó, trong khi thứ tự gọi các phương thức này được quản lý tập trung trong lớp Application.
+
+- Sử dụng Logging: Dự án sử dụng các macro logging để ghi lại thông tin về quá trình khởi động, cập nhật, và dọn dẹp của game. Điều này rất hữu ích cho việc debug và theo dõi hoạt động của game.
+
+- Tính mở rộng: Kiến trúc của dự án được thiết kế để dễ dàng mở rộng. Các module có thể được thêm mới hoặc sửa đổi mà không ảnh hưởng nhiều đến các phần còn lại của game.
+
+- Tự tìm hiểu và làm việc với 1 thư viện mới là Box2D: Việc sử dụng thêm 1 thư viện về vật lí giúp em khám phá ra nhiều điều thú vị và mới mẻ về sự mô phỏng lại thế giới vật lí bằng code. Các quy luật về vật lí như va chạm, trọng lực, và động lực học của các vật thể được mô phỏng lại chi tiết theo quy luật thực tế. Khi tích hợp Box2D vào dự án game Pinball, nó mang lại nhiều cải tiến và khác biệt so với việc sử dụng các hệ thống vật lý đơn giản hoặc không có hệ thống vật lý. Vậy nên Project này với em không chỉ đơn thuần là cố gắng tạo 1 con game pinball cổ điển, mà còn là trải nghiệm thêm những gì code có thể làm được trong việc tái tạo và mô phỏng lại những gì có trong thực tế, như trong project này là vật lí cơ bản.
+
+# 1 số hạn chế mà bản thân tự nhận ra:
+
+- Giao diện đồ họa và âm thanh đơn giản vì chủ yếu cắt ghép từ game gốc.
+  
+- Chưa có nhiều điểm khác biệt về lối chơi do chủ yếu bận tâm về tìm hiểu các quy tắc vật lí.
+
+- Thiếu thời gian để cải tiến thêm về hệ thống điểm thưởng cũng như các quy tắc khác cho game.
+
+# Những kinh nghiệm rút ra cho bản thân sau project và Kết luận:
+
+- Tầm quan trọng của quản lý bộ nhớ: Việc quản lý bộ nhớ thủ công với con trỏ raw trong C++ đòi hỏi lập trình viên phải cực kỳ cẩn thận để tránh các lỗi như rò rỉ bộ nhớ hoặc xóa đối tượng nhiều lần. Điều này nhấn mạnh tầm quan trọng của việc hiểu rõ về quản lý bộ nhớ trong C++.
+
+- Tính module hóa và giảm phụ thuộc giữa các thành phần: Mặc dù đã có sự phân chia các chức năng thành các module, vẫn cần chú ý đến việc giảm sự phụ thuộc giữa các module để tăng tính linh hoạt và khả năng mở rộng của dự án. Điều này giúp dễ dàng thay đổi hoặc mở rộng các phần của game mà không ảnh hưởng đến toàn bộ hệ thống.
+
+- Giá trị của giao diện người dùng và trải nghiệm âm thanh trong việc xây dựng 1 hệ thống: Giao diện đồ họa và âm thanh đóng vai trò quan trọng trong việc tạo ra trải nghiệm hấp dẫn cho người chơi. Một giao diện đơn giản hoặc thiếu các hiệu ứng âm thanh có thể khiến game kém hấp dẫn so với các tiêu chuẩn hiện đại. ==> Kinh nghiệm: Đầu tư vào thiết kế giao diện người dùng (UI/UX) và hệ thống âm thanh để tạo ra trải nghiệm phong phú hơn cho người chơi, đồng thời cân nhắc sử dụng các công nghệ và công cụ mới để cải thiện chất lượng đồ họa và âm thanh.
+
+- Sự cần thiết của các hệ thống game phức tạp hơn: Hệ thống game cơ bản, như ghi điểm đơn giản, có thể chưa đủ để duy trì sự hứng thú của người chơi trong thời gian dài. Các hệ thống phức tạp hơn như combo, phần thưởng, và nâng cấp có thể làm cho game hấp dẫn và thử thách hơn.
+
+- Hiểu sâu về tích hợp vật lý bằng code: Tích hợp Box2D giúp mang lại sự chân thực và chính xác trong việc mô phỏng vật lý trong game. Điều này có thể tạo thêm cảm hứng cho em khi muốn thiết kế các project về sau này.
+
+==> Kết luận:
+"Pinball Game" không chỉ là một bài tập lớn môn lập trình nâng cao mà còn là một cơ hội cho em để học hỏi về cách quản lý dự án phần mềm, tối ưu hóa mã nguồn, và tạo ra một sản phẩm có tính khả thi. Những bài học rút ra từ dự án này sẽ là nền tảng vững chắc cho các dự án tương lai, giúp cải thiện kỹ năng lập trình, thiết kế phần mềm, và khả năng giải quyết vấn đề trong thực tế. Sau cùng, Em cũng xin gửi cảm ơn Thầy Lê Đức Trọng và cô Hoàng Thị Ngọc Trang đã dạy bảo và giúp đỡ em trong môn LTNC để em có thể hoàn thành được project này tốt nhất có thể và rút ra những bài học quý báu cho bản thân em trong tương lai.
+
+  
+  
