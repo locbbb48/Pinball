@@ -52,16 +52,33 @@
 
 
 ## 3. Các thành phần trong game
-- Bóng: Di chuyển tự do trên bàn và phản ứng với các va chạm.
+- Ball: Bóng chính của trò chơi. Nó có thể bị loại bỏ khỏi bàn chơi và được khởi động lại bằng cách sử dụng launcher.
 
 ![image](https://github.com/locbbb48/Pinball/blob/main/Assets/ball.png)
 
-- Gậy: Được điều khiển bởi người chơi để giữ bóng trên bàn.
+- Flippers: Các bàn đạp giúp người chơi giữ bóng trên bàn chơi và điều khiển hướng của bóng.
 
 ![image](https://github.com/locbbb48/Pinball/blob/main/Assets/flippers.png)
 
-- Mục tiêu: Các đối tượng trên bàn mà bóng có thể va vào để ghi điểm.
+- Launcher: Một cơ chế để khởi động bóng từ khu vực khởi đầu. Điều khiển bằng phím mũi tên xuống.
 
+
+- Auto Kickers: Các cảm biến giúp đẩy bóng ra khỏi bàn chơi khi bóng chạm vào chúng.
+
+
+- Bumpers: Các đối tượng giúp tạo ra va chạm và tăng điểm cho người chơi.
+
+
+- Stars: Các đối tượng mà bóng có thể chạm vào để ghi điểm.
+
+
+- Nuggets: Các cảm biến mà bóng có thể chạm vào để ghi điểm.
+
+
+- Tornado: Một đối tượng trên bàn chơi mà bóng có thể chạm vào để ghi điểm.
+
+
+- Ball Eater: Khi bóng rơi vào, người chơi sẽ mất 1 lượt.
 
 ## 4. Cách chơi
 ### a. Mục tiêu
