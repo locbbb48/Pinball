@@ -118,31 +118,31 @@
 ### c. Điểm số và Combo
 - Bumper ![image](https://github.com/locbbb48/Pinball/blob/main/Assets/Bumper.png): Có ba bumper (leftBumper, midBumper, rightBumper) trên bàn chơi. Khi bóng va chạm với bất kỳ bumper nào, người chơi sẽ nhận được điểm:
 
-	. 100 điểm nếu không có combo.
+	- 100 điểm nếu không có combo.
   
-	. 200 điểm nếu có combo.
+	- 200 điểm nếu có combo.
 
 - Nuggets ![image](https://github.com/locbbb48/Pinball/blob/main/Assets/Nugget.png): Có hai cảm biến nugget (right_nugget_sens, left_nugget_sens). Khi bóng chạm vào một cảm biến nugget, người chơi nhận điểm:
 
-	. 250 điểm nếu không có combo.
+  	- 250 điểm nếu không có combo.
   
-	. 500 điểm nếu có combo.
+	- 500 điểm nếu có combo.
 
 - Tornado: Khi bóng chạm vào cảm biến tornado, người chơi nhận điểm:
 
  	 ![image](https://github.com/locbbb48/Pinball/blob/main/Assets/piece_tornado.png)
 
-	. 2000 điểm nếu không có combo.
+	- 2000 điểm nếu không có combo.
   
-	. 4000 điểm nếu có combo.
+	- 4000 điểm nếu có combo.
 
 - Ball Eater: Khi bóng chạm vào cảm biến ball eater:
 
   ![image](https://github.com/locbbb48/Pinball/blob/main/Assets/Ball%20Eater.png)
 
-	. 500 điểm nếu không có combo.
+	- 500 điểm nếu không có combo.
   
-	.1000 điểm nếu có combo.
+	- 1000 điểm nếu có combo.
 
 - Stars ![image](https://github.com/locbbb48/Pinball/blob/main/Assets/star.png): Có ba ngôi sao (leftStar, middleStar, rightStar). Khi bóng chạm vào một ngôi sao, nó sẽ sáng lên.
 
@@ -179,28 +179,28 @@
 - Mô tả chung về các Module:
 
   
-  	. ModuleWindow: quản lý cửa sổ ứng dụng, là bước khởi đầu cho bất kỳ chương trình đồ họa nào, thực hiện các tác vụ khác như render, input, hoặc hiển thị hình ảnh.
+  	- ModuleWindow: quản lý cửa sổ ứng dụng, là bước khởi đầu cho bất kỳ chương trình đồ họa nào, thực hiện các tác vụ khác như render, input, hoặc hiển thị hình ảnh.
 
   
-	. ModuleRender: quản lý việc render nội dung lên cửa sổ. ModuleRender sẽ chịu trách nhiệm vẽ mọi thứ lên màn hình.
+	- ModuleRender: quản lý việc render nội dung lên cửa sổ. ModuleRender sẽ chịu trách nhiệm vẽ mọi thứ lên màn hình.
 
 
-	. ModuleInput: quản lý các đầu vào từ người dùng, như bàn phím và chuột để điều khiển nhân vật hoặc tương tác với các thành phần khác của game.
+	- ModuleInput: quản lý các đầu vào từ người dùng, như bàn phím và chuột để điều khiển nhân vật hoặc tương tác với các thành phần khác của game.
 
 
-	. ModuleTextures: quản lý việc tải và lưu trữ các hình ảnh, sprite. Các texture này sẽ được sử dụng trong quá trình render, vì vậy cần phải có trước khi render các đối tượng phức tạp.
+	- ModuleTextures: quản lý việc tải và lưu trữ các hình ảnh, sprite. Các texture này sẽ được sử dụng trong quá trình render, vì vậy cần phải có trước khi render các đối tượng phức tạp.
 
 
-	. ModuleAudio: xử lý âm thanh trong trò chơi, bao gồm nhạc nền và hiệu ứng âm thanh, tạo trải nghiệm đa phương tiện cho người chơi.
+	- ModuleAudio: xử lý âm thanh trong trò chơi, bao gồm nhạc nền và hiệu ứng âm thanh, tạo trải nghiệm đa phương tiện cho người chơi.
 
 
-	. ModulePhysics: quản lý các quy luật vật lý trong trò chơi, cần thiết cho việc xử lý va chạm, trọng lực, và các động lực khác vì trò chơi có các yếu tố vật lý như di chuyển hoặc tương tác giữa các đối tượng.
+	- ModulePhysics: quản lý các quy luật vật lý trong trò chơi, cần thiết cho việc xử lý va chạm, trọng lực, và các động lực khác vì trò chơi có các yếu tố vật lý như di chuyển hoặc tương tác giữa các đối tượng.
 
 
-	. ModuleSceneIntro: quản lý trò chơi. Module này sử dụng tất cả các module trước đó để hiển thị game.
+	- ModuleSceneIntro: quản lý trò chơi. Module này sử dụng tất cả các module trước đó để hiển thị game.
 
 
-	. ModulePlayer: ử dụng tất cả các thành phần đã được tạo ra trước đó (cửa sổ, render, input, audio, physics) để điều khiển lối chơi.
+	- ModulePlayer: ử dụng tất cả các thành phần đã được tạo ra trước đó (cửa sổ, render, input, audio, physics) để điều khiển lối chơi.
   
 
 
@@ -226,25 +226,25 @@
 ### Điểm tốt nổi bật:
 - Project được sử dụng nhiều kĩ thuật lập trình nổi bật, trong đó áp dụng được nhiều kiến thức lí thuyết đã học trong môn LTNC:
 
-	. Sử dụng Danh sách liên kết: Dự án sử dụng danh sách liên kết (p2List) để quản lý các module trong game. Danh sách này giúp dễ dàng thêm, xóa, hoặc duyệt qua các module mà không cần phải biết trước 		kích thước hoặc vị trí của các phần tử. Ví dụ: Trong Application::AddModule(Module* mod), các module được thêm vào danh sách liên kết để quản lý và gọi các hàm Init, Start, Update, và CleanUp theo trình 	tự.
+	- Sử dụng Danh sách liên kết: Dự án sử dụng danh sách liên kết (p2List) để quản lý các module trong game. Danh sách này giúp dễ dàng thêm, xóa, hoặc duyệt qua các module mà không cần phải biết trước 		kích thước hoặc vị trí của các phần tử. Ví dụ: Trong Application::AddModule(Module* mod), các module được thêm vào danh sách liên kết để quản lý và gọi các hàm Init, Start, Update, và CleanUp theo trình 	tự.
   
-	. Sử dụng con trỏ trỏ raw (new và delete) để quản lý bộ nhớ cho các module trong game. Điều này đòi hỏi lập trình viên phải cẩn thận để tránh các lỗi liên quan đến quản lý bộ nhớ như rò rỉ bộ nhớ 		(memory leak) hoặc xóa đối tượng nhiều lần. Ví dụ: Trong Application::~Application(), các module được xóa theo thứ tự ngược lại với thứ tự khởi tạo để đảm bảo mọi tài nguyên được giải phóng đúng cách.
+	- Sử dụng con trỏ trỏ raw (new và delete) để quản lý bộ nhớ cho các module trong game. Điều này đòi hỏi lập trình viên phải cẩn thận để tránh các lỗi liên quan đến quản lý bộ nhớ như rò rỉ bộ nhớ 		(memory leak) hoặc xóa đối tượng nhiều lần. Ví dụ: Trong Application::~Application(), các module được xóa theo thứ tự ngược lại với thứ tự khởi tạo để đảm bảo mọi tài nguyên được giải phóng đúng cách.
 
 - Sử dụng 1 số Design Pattern chuyên dụng và nổi bật cho việc làm game như:
 
-  	. Singleton: 1 Design Patterm để đảm bảo chỉ có một instance duy nhất của lớp Application. Điều này giúp dễ dàng quản lý các tài nguyên và trạng thái toàn cục của game. Ví dụ: Application là một 		singleton, và nó được tạo và quản lý trong hàm main. Chỉ có một instance duy nhất của Application trong suốt vòng đời của chương trình.
+  	- Singleton: 1 Design Patterm để đảm bảo chỉ có một instance duy nhất của lớp Application. Điều này giúp dễ dàng quản lý các tài nguyên và trạng thái toàn cục của game. Ví dụ: Application là một 		singleton, và nó được tạo và quản lý trong hàm main. Chỉ có một instance duy nhất của Application trong suốt vòng đời của chương trình.
 
-  	. Module Pattern: Dự án tổ chức code thành các module riêng biệt, mỗi module chịu trách nhiệm cho một phần cụ thể của game như ModuleRender, ModuleWindow, ModuleInput, ModuleAudio, ModulePlayer, và 		ModulePhysics. Điều này giúp tách biệt các chức năng, giảm sự phụ thuộc giữa các thành phần, và dễ bảo trì hơn.
+  	- Module Pattern: Dự án tổ chức code thành các module riêng biệt, mỗi module chịu trách nhiệm cho một phần cụ thể của game như ModuleRender, ModuleWindow, ModuleInput, ModuleAudio, ModulePlayer, và 		ModulePhysics. Điều này giúp tách biệt các chức năng, giảm sự phụ thuộc giữa các thành phần, và dễ bảo trì hơn.
 
-	.Template Method Pattern: Các phương thức Update trong các module được triển khai theo template method pattern. Mỗi module có thể triển khai riêng các phương thức PreUpdate, Update, và PostUpdate để xác 	định hành vi cụ thể của nó, trong khi thứ tự gọi các phương thức này được quản lý tập trung trong lớp Application.
+	- Template Method Pattern: Các phương thức Update trong các module được triển khai theo template method pattern. Mỗi module có thể triển khai riêng các phương thức PreUpdate, Update, và PostUpdate để 	xác định hành vi cụ thể của nó, trong khi thứ tự gọi các phương thức này được quản lý tập trung trong lớp Application.
 
 - Sử dụng và tuân thủ các quy tắc của OOP: Dự án game Pinball được xây dựng dựa trên nền tảng lập trình hướng đối tượng (OOP), nơi mỗi chức năng chính của trò chơi được đóng gói trong các module khác nhau. Các module này đại diện cho các lớp (class) trong C++, mỗi module chịu trách nhiệm cho một phần cụ thể của trò chơi như âm thanh, xử lý vật lý, đồ họa, và điều khiển của người chơi.
 
-	. Đóng gói: Mỗi module quản lý trạng thái và hành vi riêng của nó, không để lộ chi tiết triển khai ra bên ngoài. Điều này giúp mã nguồn dễ bảo trì và tránh xung đột giữa các phần khác nhau của chương 	trình.
+	- Đóng gói: Mỗi module quản lý trạng thái và hành vi riêng của nó, không để lộ chi tiết triển khai ra bên ngoài. Điều này giúp mã nguồn dễ bảo trì và tránh xung đột giữa các phần khác nhau của chương 	trình.
   
-  	. Kế thừa: Một số module có thể kế thừa từ các lớp cơ sở để chia sẻ các thuộc tính và phương thức chung.
+  	- Kế thừa: Một số module có thể kế thừa từ các lớp cơ sở để chia sẻ các thuộc tính và phương thức chung.
 
-  	.Đa hình: Được sử dụng để cho phép các module khác nhau có thể được xử lý theo cùng một cách thông qua con trỏ lớp cơ sở, điều này rất hữu ích trong việc quản lý vòng đời của các module và gọi các 		phương thức chung như Init(), Update(), và CleanUp().
+  	- Đa hình: Được sử dụng để cho phép các module khác nhau có thể được xử lý theo cùng một cách thông qua con trỏ lớp cơ sở, điều này rất hữu ích trong việc quản lý vòng đời của các module và gọi các 		phương thức chung như Init(), Update(), và CleanUp().
 
 - Sử dụng Logging: Dự án sử dụng các macro logging để ghi lại thông tin về quá trình khởi động, cập nhật, và dọn dẹp của game. Điều này rất hữu ích cho việc debug và theo dõi hoạt động của game.
 
