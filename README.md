@@ -66,23 +66,23 @@
 
 - Auto Kickers: Các cảm biến giúp đẩy bóng lên khỏi khi bóng chạm vào chúng.
   
-![image](https://github.com/locbbb48/Pinball/blob/main/Assets/Auto%20Kicker.png)
+	![image](https://github.com/locbbb48/Pinball/blob/main/Assets/Auto%20Kicker.png)
 
 - Bumpers: Các đối tượng giúp tạo ra va chạm và tăng điểm cho người chơi.
 
-![image](https://github.com/locbbb48/Pinball/blob/main/Assets/Bumper.png)
+	![image](https://github.com/locbbb48/Pinball/blob/main/Assets/Bumper.png)
 
 - Stars: Các đối tượng mà bóng có thể chạm vào để ghi điểm.
 
-![image](https://github.com/locbbb48/Pinball/blob/main/Assets/star.png)
+	![image](https://github.com/locbbb48/Pinball/blob/main/Assets/star.png)
 
 - Nuggets: Các cảm biến mà bóng có thể chạm vào để ghi điểm, bóng chạm vào sẽ bị nảy ra với 1 lực.
 
-![image](https://github.com/locbbb48/Pinball/blob/main/Assets/Nugget.png)
+	![image](https://github.com/locbbb48/Pinball/blob/main/Assets/Nugget.png)
 
 - Tornado: là một đối tượng đặc biệt trên bàn chơi, giúp tăng điểm, có khả năng hút bóng vào và đưa bóng đến 1 vị trí bất ngờ.
 
-![image](https://github.com/locbbb48/Pinball/blob/main/Assets/piece_tornado.png)
+	![image](https://github.com/locbbb48/Pinball/blob/main/Assets/piece_tornado.png)
 
 - Ball Eater: Khi bóng rơi vào, bóng sẽ bị giữ lại trong một thời gian nhất định trước khi được bắn ra lại với tốc độ bất ngờ.
 
@@ -112,21 +112,25 @@
 - Bumper (Bumpers): Có ba bumper (leftBumper, midBumper, rightBumper) trên bàn chơi. Khi bóng va chạm với bất kỳ bumper nào, người chơi sẽ nhận được điểm:
 
 	. 100 điểm nếu không có combo.
+  
 	. 200 điểm nếu có combo.
 
 - Nuggets: Có hai cảm biến nugget (right_nugget_sens, left_nugget_sens). Khi bóng chạm vào một cảm biến nugget, người chơi nhận điểm:
 
 	. 250 điểm nếu không có combo.
+  
 	. 500 điểm nếu có combo.
 
 - Tornado: Khi bóng chạm vào cảm biến tornado, người chơi nhận điểm:
 
 	. 2000 điểm nếu không có combo.
+  
 	. 4000 điểm nếu có combo.
 
 - Ball Eater: Khi bóng chạm vào cảm biến ball eater:
 
 	. 500 điểm nếu không có combo.
+  
 	.1000 điểm nếu có combo.
 
 - Stars: Có ba ngôi sao (leftStar, middleStar, rightStar). Khi bóng chạm vào một ngôi sao, nó sẽ sáng lên.
