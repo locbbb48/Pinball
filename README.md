@@ -222,6 +222,14 @@ Box2D giúp mô phỏng vật lý chính xác cho các đối tượng trên bà
 
 	.Template Method Pattern: Các phương thức Update trong các module được triển khai theo template method pattern. Mỗi module có thể triển khai riêng các phương thức PreUpdate, Update, và PostUpdate để xác 	định hành vi cụ thể của nó, trong khi thứ tự gọi các phương thức này được quản lý tập trung trong lớp Application.
 
+- Sử dụng và tuân thủ các quy tắc của OOP: Dự án game Pinball được xây dựng dựa trên nền tảng lập trình hướng đối tượng (OOP), nơi mỗi chức năng chính của trò chơi được đóng gói trong các module khác nhau. Các module này đại diện cho các lớp (class) trong C++, mỗi module chịu trách nhiệm cho một phần cụ thể của trò chơi như âm thanh, xử lý vật lý, đồ họa, và điều khiển của người chơi.
+
+	. Đóng gói: Mỗi module quản lý trạng thái và hành vi riêng của nó, không để lộ chi tiết triển khai ra bên ngoài. Điều này giúp mã nguồn dễ bảo trì và tránh xung đột giữa các phần khác nhau của chương 	trình.
+  
+  	. Kế thừa: Một số module có thể kế thừa từ các lớp cơ sở để chia sẻ các thuộc tính và phương thức chung.
+
+  	.Đa hình: Được sử dụng để cho phép các module khác nhau có thể được xử lý theo cùng một cách thông qua con trỏ lớp cơ sở, điều này rất hữu ích trong việc quản lý vòng đời của các module và gọi các 		phương thức chung như Init(), Update(), và CleanUp().
+
 - Sử dụng Logging: Dự án sử dụng các macro logging để ghi lại thông tin về quá trình khởi động, cập nhật, và dọn dẹp của game. Điều này rất hữu ích cho việc debug và theo dõi hoạt động của game.
 
 - Tính mở rộng: Kiến trúc của dự án được thiết kế để dễ dàng mở rộng. Các module có thể được thêm mới hoặc sửa đổi mà không ảnh hưởng nhiều đến các phần còn lại của game.
