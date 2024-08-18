@@ -44,7 +44,9 @@
 
 ### b. Cách 2: Bao gồm code và có thể biên dịch
 - Clone repository từ GitHub:
- 
+- 
+![image](https://github.com/locbbb48/Pinball/blob/main/Scr1)
+
 - Biên dịch code bằng cách sử dụng môi trường phát triển có hỗ trợ SDL2 và Box2D.
 ## 2. Bắt đầu game
 - Mở trò chơi bằng cách tìm file .exe trong file release đã tải về và bắt đầu trò chơi.
