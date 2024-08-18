@@ -155,7 +155,7 @@
 - Thất bại: Trò chơi kết thúc khi bóng rơi khỏi bàn 5 lần.
 - Video demo game:
 
-  [Watch the gameplay video](https://github.com/locbbb48/Pinball/raw/main/Assets/Pinball_pre2.mp4)
+![Gameplay GIF](https://github.com/locbbb48/Pinball/blob/main/Assets/Pinball_Gif.gif)
 
 
 ---
