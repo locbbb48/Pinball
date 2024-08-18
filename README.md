@@ -38,13 +38,16 @@
 
 ### a. Cách 1: Không bao gồm code
 - Tải bản phát hành mới nhất từ phần [Releases](https://github.com/locbbb48/Pinball/releases/tag/Public). Tệp này chỉ bao gồm trò chơi đã biên dịch và sẵn sàng để chơi.
+  
+![image](https://github.com/locbbb48/Pinball/blob/main/Assets/Scr2.png)
+
 - Tải xuống PinBall.Release.zip
 - Giải nén và tìm file Pinball.exe trong tệp đã giải nén.
 - Ấn vào file Pinball.exe và chơi game.
 
 ### b. Cách 2: Bao gồm code và có thể biên dịch
 - Clone repository từ GitHub:
-- 
+  
 ![image](https://github.com/locbbb48/Pinball/blob/main/Scr1)
 
 - Biên dịch code bằng cách sử dụng môi trường phát triển có hỗ trợ SDL2 và Box2D.
@@ -55,11 +58,11 @@
 
 
 ## 3. Các thành phần trong game
-- Ball: Bóng chính của trò chơi. Nó có thể bị loại bỏ khỏi bàn chơi và được khởi động lại bằng cách sử dụng launcher.
+- Ball: Bóng chính của trò chơi. Được khởi động lại bằng cách sử dụng launcher, ta cần giữ nó trên bàn chơi lâu nhất có thể.
 
 ![image](https://github.com/locbbb48/Pinball/blob/main/Assets/ball.png)
 
-- Flippers: Các bàn đạp giúp người chơi giữ bóng trên bàn chơi và điều khiển hướng của bóng.
+- Flippers: Các gậy giúp người chơi giữ bóng trên bàn chơi và điều khiển hướng của bóng.
 
 ![image](https://github.com/locbbb48/Pinball/blob/main/Assets/flippers.png)
 
@@ -71,11 +74,11 @@
   
 	![image](https://github.com/locbbb48/Pinball/blob/main/Assets/Auto%20Kicker.png)
 
-- Bumpers: Các đối tượng giúp tạo ra va chạm và tăng điểm cho người chơi.
+- Bumpers: Khi bóng va chạm sẽ giúp tăng điểm cho người chơi.
 
 	![image](https://github.com/locbbb48/Pinball/blob/main/Assets/Bumper.png)
 
-- Stars: Các đối tượng mà bóng có thể chạm vào để ghi điểm.
+- Stars: Các ngôi sao mà bóng có thể chạm vào và phát sáng. Khi 3 ngôi sao cùng phát sáng, combo sẽ được kích hoạt
 
 	![image](https://github.com/locbbb48/Pinball/blob/main/Assets/star.png)
 
@@ -112,13 +115,13 @@
 
 
 ### c. Điểm số và Combo
-- Bumper (Bumpers): Có ba bumper (leftBumper, midBumper, rightBumper) trên bàn chơi. Khi bóng va chạm với bất kỳ bumper nào, người chơi sẽ nhận được điểm:
+- Bumper ![image](https://github.com/locbbb48/Pinball/blob/main/Assets/Bumper.png): Có ba bumper (leftBumper, midBumper, rightBumper) trên bàn chơi. Khi bóng va chạm với bất kỳ bumper nào, người chơi sẽ nhận được điểm:
 
 	. 100 điểm nếu không có combo.
   
 	. 200 điểm nếu có combo.
 
-- Nuggets: Có hai cảm biến nugget (right_nugget_sens, left_nugget_sens). Khi bóng chạm vào một cảm biến nugget, người chơi nhận điểm:
+- Nuggets ![image](https://github.com/locbbb48/Pinball/blob/main/Assets/Nugget.png): Có hai cảm biến nugget (right_nugget_sens, left_nugget_sens). Khi bóng chạm vào một cảm biến nugget, người chơi nhận điểm:
 
 	. 250 điểm nếu không có combo.
   
@@ -126,17 +129,21 @@
 
 - Tornado: Khi bóng chạm vào cảm biến tornado, người chơi nhận điểm:
 
+ 	 ![image](https://github.com/locbbb48/Pinball/blob/main/Assets/piece_tornado.png)
+
 	. 2000 điểm nếu không có combo.
   
 	. 4000 điểm nếu có combo.
 
 - Ball Eater: Khi bóng chạm vào cảm biến ball eater:
 
+  ![image](https://github.com/locbbb48/Pinball/blob/main/Assets/Ball%20Eater.png)
+
 	. 500 điểm nếu không có combo.
   
 	.1000 điểm nếu có combo.
 
-- Stars: Có ba ngôi sao (leftStar, middleStar, rightStar). Khi bóng chạm vào một ngôi sao, nó sẽ sáng lên.
+- Stars ![image](https://github.com/locbbb48/Pinball/blob/main/Assets/star.png): Có ba ngôi sao (leftStar, middleStar, rightStar). Khi bóng chạm vào một ngôi sao, nó sẽ sáng lên.
 
 - Combo: Trong khi ba ngôi sao trên cùng sáng lên, số điểm mỗi lần bạn đạt được sẽ đều được nhân đôi.
 
