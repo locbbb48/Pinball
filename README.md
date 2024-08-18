@@ -78,7 +78,7 @@
 - Tornado: Một đối tượng trên bàn chơi mà bóng có thể chạm vào để ghi điểm.
 
 
-- Ball Eater: Khi bóng rơi vào, người chơi sẽ mất 1 lượt.
+- Ball Eater: Khi bóng rơi vào, bóng sẽ bị giữ lại trong một thời gian nhất định trước khi được bắn ra lại với tốc độ bất ngờ.
 
 ## 4. Cách chơi
 ### a. Mục tiêu
